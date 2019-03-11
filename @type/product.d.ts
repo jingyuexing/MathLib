@@ -1,0 +1,3 @@
+interface product{
+    constructor();
+}

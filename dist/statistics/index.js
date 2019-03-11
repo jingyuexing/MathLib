@@ -1,0 +1,27 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Gaussian_distribution_1 = require("./Gaussian-distribution");
+exports.GD = Gaussian_distribution_1.Gaussiandistribution;
+var Variance_1 = require("./Variance");
+exports.Vc = Variance_1.Variance;
+var Standard_Deviation_1 = require("./Standard-Deviation");
+exports.SD = Standard_Deviation_1.StandardDeviation;
+var Bayes_1 = require("./Bayes");
+exports.bayes = Bayes_1.bayes;
+var Mean_1 = require("./Mean");
+exports.Mean = Mean_1.Mean;
+var Median_1 = require("./Median");
+exports.Median = Median_1.Median;
+var weigth_variance_1 = require("./weigth-variance");
+exports.WeiVar = weigth_variance_1.weigthVariance;
+var QuantilePlot_1 = require("./QuantilePlot");
+exports.QuanPlot = QuantilePlot_1.QuantilePlot;
+var Matrix_1 = require("./Matrix");
+exports.Matrix = Matrix_1.Matrix;
+var factorial_1 = require("./factorial");
+exports.fator = factorial_1.Factorial;
+var Permutations_1 = require("./Permutations");
+exports.Permu = Permutations_1.Permu;
+var vector_1 = require("./vector");
+exports.Vector = vector_1.Vector;
+//# sourceMappingURL=index.js.map

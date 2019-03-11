@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<script src="../dist/vector-v0.0.3.js"></script>
+	<script src="../dist/Math-web/Matrix.js"></script>
+</head>
+<body>
+	<script>
+		var matrix = (function(){
+	function matrix(row,col){
+		this.row =row;//行数
+		this.col= col;//列数
+		if(!isNaN(row)&&!isNaN(col)){
+			this.data= new Array(row);
+			for(let i =0;i<this.data.length;i++){
+				this.data[i] = new Array(col);
+			}
+		}
+	}
+	matrix.prototype={
+		product:function(data){
+			if(typeof data =="number"){
+				for(let i=0;i<this.row;i++){
+					for(let j=0;j<this.col;j++){
+						this.data[i][j]*=data;
+					}
+				}
+				return this;
+			}else if(data instanceof matrix){
+				if(this.row == data.col){
+					let tempMatrix = new matrix(this.row,data.col);
+					for(var k=0;k<this.row;k++){
+						for(var i=0;i<this.row;i++){
+							for(var j =0;j<data.row;j++){
+								tempMatrix.data[i][j] = this.data[i][k]*data.data[k][j];
+							}
+						}
+					}
+					return (this,tempMatrix);
+				}else{
+					throw Error("两个矩阵不相容");
+				}
+			}else{
+                console.error("参数必须是数字或者矩阵")
+				throw TypeError("参数必须是数字或者矩阵!");
+			}
+		}
+	};
+	return matrix;
+})();
+var tempmatrix = new matrix(3,5);
+for(let i=0;i<tempmatrix.row;i++){
+	for(let j=0;j<tempmatrix.col;j++){
+		tempmatrix.data[i][j]=i*j;
+	}
+
+}
+	</script>
+</body>
+</html>

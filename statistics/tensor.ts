@@ -1,0 +1,4 @@
+class Tensor{
+
+}
+export {Tensor};
