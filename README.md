@@ -16,4 +16,4 @@
 - ----`Permutations`：阶乘
 
 ---
-关于这个数学库如果有意见可以和我[一起修改我的github仓库](erthchen@gmail.com)
+关于这个数学库如果有意见可以和我[一起修改我的github仓库](https://github.com/jingyuexing/MathLib)
