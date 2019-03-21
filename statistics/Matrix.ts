@@ -116,6 +116,10 @@ class Matrix{
 		}
 		return (this,tempAry);
 	}
+	/**
+	 * 求矩阵范数
+	 * @param {Matrix} A [description]
+	 */
 	frobenius(A:Matrix){
 		let tempNums:number=0;
 		for(let i=0;i<A.row;i++){
@@ -124,6 +128,21 @@ class Matrix{
 			}
 		}
 		return tempNums**(1/2);
+	}
+	/**
+	 * 矩阵的转置
+	 * [tran description]
+	 * @param  {Matrix} A [需被转置的矩阵]
+	 * @return {Matrix}   [转置后的结果]
+	 */
+	tran(A:Matrix):Matrix{
+		let NMatrix = new Matrix(A.col,A.row);
+		for(let i=0;i<A.row;i++){
+			for(let j=0;j<A.col;j++){
+				NMatrix.data[j][i]=A.data[i][j];
+			}
+		}
+		return NMatrix;
 	}
 }
 export {Matrix};
