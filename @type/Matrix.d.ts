@@ -21,4 +21,16 @@ interface Matrix{
 	 * @return {Array<number>}        [降维后返回的数组]
 	 */
     downDimensionality(matrix:Matrix):Array<number>;
+    /**
+	 * 求矩阵范数
+	 * @param {Matrix} A [description]
+	 */
+	frobenius(A:Matrix):number;
+	/**
+	 * 矩阵的转置
+	 * [tran description]
+	 * @param  {Matrix} A [需被转置的矩阵]
+	 * @return {Matrix}   [转置后的结果]
+	 */
+	tran(A:Matrix):Matrix;
 }
