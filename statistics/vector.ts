@@ -92,14 +92,14 @@ class Vector{
      * @param  {vector|Array<number>} dada [和向量比较的向量或数据]
      * @return {boolean}                   [结果]
      */
-    vertical(dada:Vector|Array<number>):boolean{//点积的值为零返回真
+    isVertical(dada:Vector|Array<number>):boolean{//点积的值为零返回真
         if(dada instanceof Array){
             if(this.product(dada)==0){
                 return true;
             }
         }
         if(dada instanceof Vector){
-            this.vertical(dada.data)
+            this.isVertical(dada.data)
         }
         return false;
     }
