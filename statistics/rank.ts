@@ -4,7 +4,7 @@ class Rank{
 	 * 插入排序
 	 * @param {Array<number>} ...a [需要排序的数据]
 	 */
-	insert([...a]:Array<number>){
+	insert([...a]:Array<number>):Array<number>{
 		var key:number,j:number;
 		for(var i:number=2;i <= a.length;i++){
 			key = a[i];
@@ -35,4 +35,6 @@ class Rank{
 		}
 		return a;
 	}
+	
 }
+default export {Rank};

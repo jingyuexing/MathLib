@@ -2,8 +2,7 @@
  * 协方差
  */
 import {Mean} from "./Mean";
-class Covariance{
-	constructor([...value_a]:Array<number>,[...value_b]:Array<number>){
+function Covariance([...value_a]:Array<number>,[...value_b]:Array<number>){
 		if(value_a.length==value_b.length){
 			let mean:any = Mean([...value_a]);
 			let mean_b:any = Mean([...value_b]);
@@ -16,5 +15,4 @@ class Covariance{
 			throw Error("两个集合不均等!");
 		}
 	}
-}
 export {Covariance as Cov};
