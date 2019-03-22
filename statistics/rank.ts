@@ -18,7 +18,7 @@ class Rank{
 		return a;
 	}
 	/**
-	 * 冒泡拍寻
+	 * 冒泡排序
 	 * @param  {Array<number>} ...a [需要排序的数据]
 	 * @return {Array<number>}      [排序好的数据]
 	 */
@@ -35,6 +35,28 @@ class Rank{
 		}
 		return a;
 	}
-	
+
+	SelectSort(){
+
+	}
+	quickSort([...arry]:Array<number>,begin:number,end:number):Array<number>{
+		var i=begin,j=end,key=arry[begin];
+		while(i<j){
+			while(i<j&&arry[j]>=key) j--;
+			if (i<j) {
+				arry[i]=arry[j];
+				i++;
+			}
+			while(i<j&&arry[i]<key) i++;
+			if(i<j){
+				arry[j]=arry[i];
+				j--;
+			}
+		}
+		arry[i]=key;
+		this.quickSort(arry,begin,i-1);
+		this.quickSort(arry,i+1,end);
+		return arry;
+	}
 }
-default export {Rank};
+export {Rank};
