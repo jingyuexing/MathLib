@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 // 排序算法
 var Rank = /** @class */ (function () {
     function Rank() {
@@ -22,7 +23,7 @@ var Rank = /** @class */ (function () {
         return a;
     };
     /**
-     * 冒泡拍寻
+     * 冒泡排序
      * @param  {Array<number>} ...a [需要排序的数据]
      * @return {Array<number>}      [排序好的数据]
      */
@@ -40,6 +41,31 @@ var Rank = /** @class */ (function () {
         }
         return a;
     };
+    Rank.prototype.SelectSort = function () {
+    };
+    Rank.prototype.quickSort = function (_a, begin, end) {
+        var arry = _a.slice(0);
+        var i = begin, j = end, key = arry[begin];
+        while (i < j) {
+            while (i < j && arry[j] >= key)
+                j--;
+            if (i < j) {
+                arry[i] = arry[j];
+                i++;
+            }
+            while (i < j && arry[i] < key)
+                i++;
+            if (i < j) {
+                arry[j] = arry[i];
+                j--;
+            }
+        }
+        arry[i] = key;
+        this.quickSort(arry, begin, i - 1);
+        this.quickSort(arry, i + 1, end);
+        return arry;
+    };
     return Rank;
 }());
+exports.Rank = Rank;
 //# sourceMappingURL=rank.js.map
