@@ -1,6 +1,6 @@
 class product{
-	total:number;
-	ary:number[];
+	total:number=0;
+	ary:Array<number>=[];
 	/**
 	 * 初始化一个product对象
 	 * @param {Array<number>} ...index [数据:数组]

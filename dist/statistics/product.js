@@ -6,6 +6,8 @@ var product = /** @class */ (function () {
      */
     function product(_a) {
         var index = _a.slice(0);
+        this.total = 0;
+        this.ary = [];
         for (var i = 0; i < index.length; i++) {
             this.total += index[i];
             this.ary.push(index[i]);
