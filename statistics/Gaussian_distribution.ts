@@ -1,6 +1,6 @@
-import {Gaussiandistribution as GD} from "./Gaussian-distribution";
+import {Gaussiandistribution as GD} from "./Gaussian_distribution";
 import {Variance as Vc} from "./Variance";
-import {StandardDeviation as SD} from "./Standard-Deviation";
+import {StandardDeviation as SD} from "./Standard_Deviation";
 /**
  * 高斯正态分布
  */

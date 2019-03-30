@@ -13,7 +13,8 @@ import {Vector} from "./vector";
 import {sigmoid} from "./sigmoid";
 import {Rank} from "./rank";
 import {Tensor} from "./tensor";
-import {LeastSquare} "./LeastSquare";
+import {LeastSquare} from "./LeastSquare";
 import {gcd} from "./gcd";
+import {Harmonic as Har} from "./harmonic"
 //导出多个模块
-export {GD,Vc,SD,bayes,Mean,Median,Permu,fator,Matrix,QuanPlot,WeiVar,Vector,sigmoid,Tensor,LeastSquare,gcd};
+export {GD,Vc,SD,Har,bayes,Rank,Mean,Median,Permu,fator,Matrix,QuanPlot,WeiVar,Vector,sigmoid,Tensor,LeastSquare,gcd};

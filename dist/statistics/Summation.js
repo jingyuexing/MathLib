@@ -2,6 +2,11 @@
 var Summation = /** @class */ (function () {
     function Summation(_a) {
         var num = _a.slice(0);
+        /**
+         * 求和
+         * @param {Array<number>} ...num [description]
+         */
+        this.total = 0;
         for (var i = 0; i < num.length; i++) {
             this.total += num[i];
         }

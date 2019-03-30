@@ -45,9 +45,10 @@ var Matrix = /** @class */ (function () {
         var tempMatrix = new Matrix(this.row, matrix.col);
         if (matrix instanceof Matrix) {
             if (this.col == matrix.row) {
-                for (var k = 0; k < this.col; k++) {
-                    for (var i = 0; i < this.row; i++) {
-                        for (var j = 0; j < matrix.col; j++) {
+                for (var i = 0; i < this.row; i++) {
+                    for (var j = 0; j < matrix.col; j++) {
+                        tempMatrix.data[i][j] = 0;
+                        for (var k = 0; k < this.col; k++) {
                             tempMatrix.data[i][j] += this.data[i][k] * matrix.data[k][j];
                         }
                     }
@@ -113,6 +114,34 @@ var Matrix = /** @class */ (function () {
             }
         }
         return (this, tempAry);
+    };
+    /**
+     * 求矩阵范数
+     * @param {Matrix} A [description]
+     */
+    Matrix.prototype.frobenius = function (A) {
+        var tempNums = 0;
+        for (var i = 0; i < A.row; i++) {
+            for (var j = 0; j < A.col; j++) {
+                tempNums += Math.pow(A.data[i][j], 2);
+            }
+        }
+        return Math.pow(tempNums, (1 / 2));
+    };
+    /**
+     * 矩阵的转置
+     * [tran description]
+     * @param  {Matrix} A [需被转置的矩阵]
+     * @return {Matrix}   [转置后的结果]
+     */
+    Matrix.prototype.tran = function (A) {
+        var NMatrix = new Matrix(A.col, A.row);
+        for (var i = 0; i < A.row; i++) {
+            for (var j = 0; j < A.col; j++) {
+                NMatrix.data[j][i] = A.data[i][j];
+            }
+        }
+        return NMatrix;
     };
     return Matrix;
 }());

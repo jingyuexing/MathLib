@@ -97,14 +97,14 @@ var Vector = /** @class */ (function () {
      * @param  {vector|Array<number>} dada [和向量比较的向量或数据]
      * @return {boolean}                   [结果]
      */
-    Vector.prototype.vertical = function (dada) {
+    Vector.prototype.isVertical = function (dada) {
         if (dada instanceof Array) {
             if (this.product(dada) == 0) {
                 return true;
             }
         }
         if (dada instanceof Vector) {
-            this.vertical(dada.data);
+            this.isVertical(dada.data);
         }
         return false;
     };

@@ -8,5 +8,5 @@ Object.defineProperty(exports, "__esModule", { value: true });
 function sigmoid(x) {
     return 1 / (1 + Math.pow(Math.E, (-x)));
 }
-exports.default = sigmoid;
+exports.sigmoid = sigmoid;
 //# sourceMappingURL=sigmoid.js.map
