@@ -14,10 +14,10 @@ function LeastSquare(_a, _b, n) {
     if (a instanceof Array && b instanceof Array) {
         var __x__ = Mean_1.Mean(a); //求得x的平均值
         var __y__ = Mean_1.Mean(b); //求得y的平均值
+        var total_1 = 0, total_2 = 0, _a_, _b_, y_, temp = [];
         if (a.length != b.length) {
             throw TypeError("两个数组数据不符合");
         }
-        var total_1 = void 0, total_2 = void 0, _a_ = void 0, _b_ = void 0, y_ = void 0, temp = void 0;
         for (var i = 0; i < a.length; i++) {
             total_1 = a[i] * b[i] - (a.length * __x__ * __y__);
             total_2 = Math.pow(a[i], 2) - (a.length * Math.pow(__x__, 2));

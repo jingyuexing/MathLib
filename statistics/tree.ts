@@ -4,9 +4,5 @@ interface TNode{
 	child:any;
 }
 class Tree{
-	constructor(){
-		let Root:TNode;
-		Root.parent = null;
-
-	}
+	
 }

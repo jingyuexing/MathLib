@@ -14,10 +14,10 @@ function LeastSquare([...a]:Array<number>,[...b]:Array<number>,n:number):Array<a
     if(a instanceof Array && b instanceof Array){
        let __x__ = Mean(a); //求得x的平均值
        let __y__ = Mean(b); //求得y的平均值
+       var total_1:number=0,total_2:number=0,_a_:number,_b_:number,y_:number,temp:Array<Point>=[];
         if(a.length!=b.length){
             throw TypeError("两个数组数据不符合")
         }
-        let total_1:number,total_2:number,_a_:number,_b_:number,y_:number,temp:Array<Point>;
         for(let i=0;i<a.length;i++){
             total_1= a[i]*b[i]-(a.length*__x__*__y__);
             total_2 = a[i]**2-(a.length*__x__**2); 
