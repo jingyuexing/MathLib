@@ -10,9 +10,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 function Mean(_a) {
     var input = _a.slice(0);
     var total = 0;
-    for (var _i = 0, input_1 = input; _i < input_1.length; _i++) {
-        var i = input_1[_i];
-        total += i;
+    for (var i = 0; i < input.length; i++) {
+        total += input[i];
     }
     return total / input.length;
 }

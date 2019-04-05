@@ -30,7 +30,7 @@ interface Vector{
      * @param  {vector|Array<number>} dada [和向量比较的向量或数据]
      * @return {boolean}                   [结果]
      */
-    vertical(dada:Vector|Array<number>):boolean
+    isVertical(dada:Vector|Array<number>):boolean
     /**
      * 求两个向量的余弦,返回值为余弦值
      * [angle 向量夹角]

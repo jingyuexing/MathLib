@@ -1,4 +1,3 @@
-import "./vector";
 import { Vector } from "./vector";
 /**
  * 实现矩阵的加减以及逆运算
@@ -24,7 +23,7 @@ class Matrix{
 	/**
 	 * 初始化为一个单位矩阵
 	 */
-	Indentity():any{
+	Indentity():Matrix{
 		for(let i=0;i<this.col;i++){
 			for(let j=0;j<this.row;j++){
 				if(i==j){
@@ -53,7 +52,7 @@ class Matrix{
 					}
 				}
 			}
-			return tempMatrix;
+			return (this,tempMatrix);
 		}
 	}
 
@@ -127,7 +126,7 @@ class Matrix{
 				tempNums+= A.data[i][j]**2
 			}
 		}
-		return tempNums**(1/2);
+		return (this,tempNums**(1/2));
 	}
 	/**
 	 * 矩阵的转置
@@ -142,7 +141,7 @@ class Matrix{
 				NMatrix.data[j][i]=A.data[i][j];
 			}
 		}
-		return NMatrix;
+		return (this,NMatrix);
 	}
 }
 export {Matrix};
