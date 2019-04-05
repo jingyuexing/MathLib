@@ -1,8 +1,9 @@
 # Tmath
 在`calculus`中有微积分为微积分实现方法,目前还未进行实现 在`statistics`中包含统计学相关的算法,如协方差，方差，求中位数,平均值,分位数图计算
+### statistics
 - ----`index`：当前库的主要导出文件
 - ----`Variance`：方差实现方法
-- ----`weigth-variance`:加权平均数实现方法
+- ----`weigth_variance`:加权平均数实现方法
 - ----`QuantilePlot`:分位数图
 - ----`Covariance`：协方差
 - ----`Gaussiandistributio`：高斯正态分布(未实现)
@@ -17,15 +18,30 @@
 - ----`expetation`：期望值
 - ----`sigmoid`:激活函数
 - ----`angule`:角度和弧度转换
+- ----`gcd`:求最大公约数
+- ----`Factorial`:求n的阶乘
+
+---
+增加链式调用,Matrix类以及Vector类
 
 ----
 用法:
+* ***Variance***
+此方法求取数据的方差,返回的是方差值,若需要标准差,只需要将该方法返回值开方即可
+```js
+//Variance([...value]:Array<number>);
+console.log(Variance([2,3,5,7,8,9,12,40,66,92,103,88]));//NaN,unknow Error
+```
+* ***weigth_variance***
+此方法返回加权平均值
+函数第一个参数数组为数据,第二个数组参数为权重值
+```js
+//weigthVariance([...numberData]: Array < number > , [...weigth]: Array < number > )
+
+```
 ```js
 //比如求一组数据的方差
-let ary = [2,3,6,8,9,12,15,22,33,14,21,16];
-console.log(new Variance(ary));//此方法将会返回求得的方法
-//若需要求标准差
-console.log(Math.sqrt(new Variance(ary)));
+
 
 ```
 
