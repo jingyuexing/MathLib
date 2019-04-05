@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jingyuexing/Tmath.git"
+    "url": "git+https://github.com/jingyuexing/MathLib.git"
   },
   "keywords": [
     "Math"
@@ -20,7 +20,7 @@
   "author": "jingyuexing",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jingyuexing/Tmath/issues"
+    "url": "https://github.com/jingyuexing/MathLib/issues"
   },
-  "homepage": "https://github.com/jingyuexing/Tmath#readme"
+  "homepage": "https://github.com/jingyuexing/MathLib#readme"
 }
