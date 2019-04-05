@@ -37,14 +37,8 @@ console.log(Variance([2,3,5,7,8,9,12,40,66,92,103,88]));//NaN,unknow Error
 函数第一个参数数组为数据,第二个数组参数为权重值
 ```js
 //weigthVariance([...numberData]: Array < number > , [...weigth]: Array < number > )
-
+console.log(weigthVariance([2,3,5,8,9,12,44],[1,1,1,2,3,2,1]))
 ```
-```js
-//比如求一组数据的方差
-
-
-```
-
 
 ---
 关于这个数学库如果有意见可以和我一起修改[我的github仓库](https://github.com/jingyuexing/MathLib)
