@@ -18,7 +18,7 @@ class Vector{
             for(let i=0;i<data.data.length;i++){
                 tempAry.push(this.data[i]+data.data[i])
             }
-            return tempAry;
+            return (this,tempAry);
         }
     }
     /**
@@ -32,7 +32,7 @@ class Vector{
             for(let i=0;i<data.data.length;i++){
                 tempAry.push(data.data[i]-this.data[i]);
             }
-            return tempAry;
+            return (this,tempAry);
         }else{
             throw Error("参数必须是向量实例或两个向量长度需相同");
         }
@@ -49,7 +49,7 @@ class Vector{
             for(let i =0;i<data.length;i++){
                 total+=data[i]**2
             }
-            return Math.sqrt(total);
+            return (this,Math.sqrt(total));
         }
         if(data instanceof Vector){
             return this.mod(data.data);
@@ -77,14 +77,14 @@ class Vector{
                 for(let i =0;i<data.length;i++){
                     total+=(this.data[i]*data[i]);
                 }
-                return total;
+                return (this,total);
             }else{
                 throw TypeError("参数长度不一致!")
             }
         }
         //乘积(点积)
         if(data instanceof Vector){
-            return this.product(data.data);
+            return (this,this.product(data.data));
         }
     }
     /**
@@ -101,7 +101,7 @@ class Vector{
         if(dada instanceof Vector){
             this.isVertical(dada.data)
         }
-        return false;
+        return (this,false);
     }
     /**
      * [angle 向量夹角]
@@ -116,7 +116,7 @@ class Vector{
                 total+=(this.data[i]*data[i]);
            }
         }
-            return total/(this.mod(data)*this.mod(this.data));
+            return (this,total/(this.mod(data)*this.mod(this.data)));
         }
         if(data instanceof Vector){
             this.angle(data.data);

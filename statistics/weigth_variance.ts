@@ -1,13 +1,12 @@
 /**
  * 加权平均数
  */
-export class weigthVariance {
     /**
      * 计算加权平均数
      * @param {Array<number>} numberData 要计算的值
      * @param {Array<number>} weigth 权值
      */
-    constructor([...numberData]: Array < number > , [...weigth]: Array < number > ) {
+    function weigthVariance([...numberData]: Array < number > , [...weigth]: Array < number > ) {
     	let totalWigth:number=0,totaNumber:number=0;
         if (numberData.length == weigth.length) {
         	for(let i:number =0;i<=numberData.length;i++){
@@ -19,4 +18,4 @@ export class weigthVariance {
         }
         return totaNumber/totalWigth;
     }
-}
+export {weigthVariance};

@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-require("./vector");
 var vector_1 = require("./vector");
 /**
  * 实现矩阵的加减以及逆运算
@@ -53,7 +52,7 @@ var Matrix = /** @class */ (function () {
                         }
                     }
                 }
-                return tempMatrix;
+                return (this, tempMatrix);
             }
         }
     };
@@ -126,7 +125,7 @@ var Matrix = /** @class */ (function () {
                 tempNums += Math.pow(A.data[i][j], 2);
             }
         }
-        return Math.pow(tempNums, (1 / 2));
+        return (this, Math.pow(tempNums, (1 / 2)));
     };
     /**
      * 矩阵的转置
@@ -141,7 +140,7 @@ var Matrix = /** @class */ (function () {
                 NMatrix.data[j][i] = A.data[i][j];
             }
         }
-        return NMatrix;
+        return (this, NMatrix);
     };
     return Matrix;
 }());
