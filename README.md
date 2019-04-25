@@ -1,4 +1,4 @@
-# Tmath
+# MathLib
 在`calculus`中有微积分为微积分实现方法,目前还未进行实现 在`statistics`中包含统计学相关的算法,如协方差，方差，求中位数,平均值,分位数图计算
 ### statistics
 - ----`index`：当前库的主要导出文件
@@ -37,14 +37,8 @@ console.log(Variance([2,3,5,7,8,9,12,40,66,92,103,88]));//NaN,unknow Error
 函数第一个参数数组为数据,第二个数组参数为权重值
 ```js
 //weigthVariance([...numberData]: Array < number > , [...weigth]: Array < number > )
-
+console.log(weigthVariance([2,3,5,8,9,12,44],[1,1,1,2,3,2,1]))
 ```
-```js
-//比如求一组数据的方差
-
-
-```
-
 
 ---
 关于这个数学库如果有意见可以和我[一起修改我的github仓库](https://github.com/jingyuexing/MathLib)
