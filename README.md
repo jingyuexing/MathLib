@@ -1,4 +1,4 @@
-# Tmath
+# MathLib
 在`calculus`中有微积分为微积分实现方法,目前还未进行实现 在`statistics`中包含统计学相关的算法,如协方差，方差，求中位数,平均值,分位数图计算
 ### statistics
 - ----`index`：当前库的主要导出文件
