@@ -13,7 +13,7 @@
 - ----`LeastSquare`：[二乘法](statistics/LeastSquare.ts)
 - ----`Media`:[中位数](statistics/Median.ts)
 - ----`Matrix`:[矩阵类](statistics/Matrix.ts),实现矩阵的计算,诸如相加,相减,矩阵的逆,矩阵转置
-- ----`rank`：[排序](statistics/Rank.ts)的实现(未完全实现)
+- ----`rank`：[排序](statistics/rank.ts)的实现(未完全实现)
 - ----`StandardDeviation`:[标准差](statistics/Standard_Deviation.ts)
 - ----`vector`:[向量](statistics/vector.ts)的运算
 - ----`Permutations`：[阶乘](statistics/Permutations.ts)
