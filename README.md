@@ -18,7 +18,7 @@
 - ----`vector`:[向量](statistics/vector.ts)的运算
 - ----`Permutations`：[阶乘](statistics/Permutations.ts)
 - ----`expetation`：[期望值](expetation.ts)
-- ----`sigmoid`:[激活函数](statistics/statistics/sigmoid.ts)
+- ----`sigmoid`:[激活函数](statistics/sigmoid.ts)
 - ----`angule`:[角度和弧度转换](statistics/angule.ts)
 - ----`gcd`:[求最大公约数](statistics/gcd.ts)
 - ----`Factorial`:[求n的阶乘](statistics/Factorial.ts)
