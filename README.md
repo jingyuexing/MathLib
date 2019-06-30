@@ -6,8 +6,6 @@
 - ----`weigth_variance`:[加权平均数实现方法](statistics/weigth_variance.ts)
 - ----`QuantilePlot`:[分位数图](statistics/QuantilePlot.ts)
 - ----`Covariance`：[协方差](statistics/Covariance.ts)
-- ----`Gaussiandistributio`：[高斯正态分布](statistics/)(未实现)
-- ----`Bayes`：[贝叶斯概率计算](statistics/)（未实现）
 - ----`Mean`：[平均值](statistics/Mean.ts)
 - ----`harmonic`：[调和数](statistics/harmonic.ts)
 - ----`LeastSquare`：[二乘法](statistics/LeastSquare.ts)
