@@ -4,7 +4,7 @@ class Rank{
 	 * 插入排序
 	 * @param {Array<number>} ...a [需要排序的数据]
 	 */
-	insert([...a]:Array<number>):Array<number>{
+	static insert([...a]:Array<number>):Array<number>{
 		var key:number,j:number;
 		for(var i:number=2;i <= a.length;i++){
 			key = a[i];
@@ -22,7 +22,7 @@ class Rank{
 	 * @param  {Array<number>} ...a [需要排序的数据]
 	 * @return {Array<number>}      [排序好的数据]
 	 */
-	bubbleSort([...a]:Array<number>):Array<number>{
+	static bubbleSort([...a]:Array<number>):Array<number>{
 		let temp:number=0;
 		for(let i=0;i<a.length-1;i++){
 			for(let j=0;j<a.length-i;j++){
@@ -36,10 +36,10 @@ class Rank{
 		return a;
 	}
 
-	SelectSort(){
+	static SelectSort(){
 
 	}
-	quickSort([...arry]:Array<number>,begin:number,end:number):Array<number>{
+	static quickSort([...arry]:Array<number>,begin:number,end:number):Array<number>{
 		var i=begin,j=end,key=arry[begin];
 		while(i<j){
 			while(i<j&&arry[j]>=key) j--;
