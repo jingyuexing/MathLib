@@ -1,0 +1,1696 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"st",
+				"stdout\tinstance"
+			],
+			[
+				"if",
+				"ifmain\tif __name__ == '__main__'"
+			],
+			[
+				"T",
+				"TypeError\tclass"
+			],
+			[
+				"ret",
+				"return\tkeyword"
+			],
+			[
+				"m",
+				"mod\tfunction"
+			],
+			[
+				"pr",
+				"print\tfunction"
+			],
+			[
+				"V",
+				"V1\tstatement"
+			],
+			[
+				"ve",
+				"vector.js"
+			],
+			[
+				"an",
+				"angle\tfunction"
+			],
+			[
+				"is",
+				"isVertical\tfunction"
+			],
+			[
+				"M",
+				"Ma\tstatement"
+			],
+			[
+				"Ma",
+				"Matrix\tclass"
+			],
+			[
+				"in",
+				"insertData\tfunction"
+			],
+			[
+				"tem",
+				"tempVector\tstatement"
+			],
+			[
+				"form",
+				"from\tkeyword"
+			],
+			[
+				"ad",
+				"addNumber\tfunction"
+			],
+			[
+				"Ve",
+				"Vector\tclass"
+			],
+			[
+				"tru",
+				"True\tkeyword"
+			],
+			[
+				"fl",
+				"float\tclass"
+			],
+			[
+				"ty",
+				"type\tclass"
+			],
+			[
+				"se",
+				"self\tparam"
+			],
+			[
+				"mu",
+				"mult\tfunction"
+			],
+			[
+				"rt",
+				"return"
+			],
+			[
+				"__l",
+				"__len__\tfunction"
+			],
+			[
+				"no",
+				"None\tkeyword"
+			],
+			[
+				"s",
+				"sqrt\tfunction"
+			],
+			[
+				"ma",
+				"math\tmodule"
+			],
+			[
+				"lis",
+				"list\tclass"
+			],
+			[
+				"Er",
+				"EnvironmentError\tclass"
+			],
+			[
+				"Err",
+				"EOFError\tclass"
+			],
+			[
+				"v",
+				"vector\tmodule"
+			],
+			[
+				"tra",
+				"tran\tfunction"
+			],
+			[
+				"t",
+				"tran\tfunction"
+			],
+			[
+				"i",
+				"indentity"
+			],
+			[
+				"ro",
+				"row\tparam"
+			],
+			[
+				"co",
+				"col\tstatement"
+			],
+			[
+				"d",
+				"data\tstatement"
+			],
+			[
+				"for",
+				"format\tfunction"
+			],
+			[
+				"c",
+				"col\tparam"
+			],
+			[
+				"floa",
+				"FloatingPointError\tclass"
+			],
+			[
+				"ra",
+				"random\tstatement"
+			],
+			[
+				"r",
+				"rand\tfunction"
+			],
+			[
+				"nu",
+				"numpy\tmodule"
+			],
+			[
+				"pl",
+				"pyplot\tmodule"
+			],
+			[
+				"fi",
+				"femail\tEmailField (femail)"
+			],
+			[
+				"tedt",
+				"text-decoration\tproperty"
+			],
+			[
+				"ste",
+				"setup\tfunction"
+			],
+			[
+				"cor",
+				"copyright\tinstance"
+			],
+			[
+				"di",
+				"divmod\tfunction"
+			],
+			[
+				"dis",
+				"dist\tmodule"
+			],
+			[
+				"dist",
+				"distutils\tmodule"
+			],
+			[
+				"sta",
+				"statistics\tmodule"
+			],
+			[
+				"$htt",
+				"$http\tAngularJS"
+			],
+			[
+				"th",
+				"then\t.then()"
+			],
+			[
+				"$",
+				"$compile\tAngularJS(DI)"
+			],
+			[
+				"con",
+				"controller\tAngular.js"
+			],
+			[
+				"ngre",
+				"ng-repeat\tAngularJS"
+			],
+			[
+				"ng",
+				"ng-view\tAngularJS"
+			],
+			[
+				"a",
+				"article.js"
+			],
+			[
+				"sc",
+				"script\tTag"
+			],
+			[
+				"f",
+				"false\tword"
+			],
+			[
+				"o",
+				"obj\tparam"
+			],
+			[
+				"pt",
+				"print\tfunction"
+			],
+			[
+				"lo",
+				"log\tfunction"
+			],
+			[
+				"cons",
+				"console\t{assert(condition: mixed, ...data: Array<any>): void; clear(): void; count(label: string): void; debug(...data: Array<any>): void; dir(...data: Array<any>): void; dirxml(...data: Array<any>): void; error(...data: Array<any>): void; _exception(...data: Array<any>): void; group(...data: Array<any>): void; groupCollapsed(...data: Array<any>): void; groupEnd(): void; info(...data: Array<any>): void; log(...data: Array<any>): void; profile(name: string): void; profileEnd(): void; table(tabularData: { [key: string]: any } | Array<{ [key: string]: any }> | Array<Array<any>>): void; time(label: string): void; timeEnd(label: string): void; timeStamp(label?: string): void; trace(...data: Array<any>): void; warn(...data: Array<any>): void; }"
+			],
+			[
+				"ng-re",
+				"ng-repeat\tAngularJS"
+			],
+			[
+				"Goods_",
+				"Goods_id"
+			],
+			[
+				"ch",
+				"char"
+			],
+			[
+				"cre",
+				"ck_readerType_dateValid"
+			],
+			[
+				"p",
+				"primary"
+			],
+			[
+				"python",
+				"python\tmodule"
+			],
+			[
+				"tensor",
+				"tf.TensorArray() \tTensorflow"
+			],
+			[
+				"ten",
+				"tensorflow\tmodule"
+			],
+			[
+				"fo",
+				"function\tSQL-Create-func"
+			],
+			[
+				"b",
+				"beforeEach"
+			],
+			[
+				"bo",
+				"border-left-width\tproperty"
+			],
+			[
+				"de",
+				"defmacro"
+			],
+			[
+				"li",
+				"linearlayout\tAndroid:LinearLayout"
+			],
+			[
+				"la",
+				"layouttoLeftOf\tAndroid:layout_toLeftOf"
+			],
+			[
+				"tr",
+				"transition\tproperty"
+			],
+			[
+				"$sc",
+				"$scope\tAngularJS"
+			],
+			[
+				"fu",
+				"func"
+			],
+			[
+				"pa",
+				"parse\t(text: string, reviver?: (key: any, value: any) => any) => any"
+			],
+			[
+				"docu",
+				"document\tword"
+			],
+			[
+				"ser",
+				"service\tAngularJS"
+			],
+			[
+				"w",
+				"WeakMap\t[class: WeakMap<K, V>]"
+			],
+			[
+				"C",
+				"COLLATE"
+			],
+			[
+				"set",
+				"SET"
+			],
+			[
+				"node",
+				"nodeValue\tstring"
+			],
+			[
+				"va",
+				"value\tAngularJS"
+			],
+			[
+				"u",
+				"user\tHTMLElement | null"
+			],
+			[
+				"fa",
+				"false"
+			],
+			[
+				"res",
+				"response\tany"
+			],
+			[
+				"read",
+				"ready\t$(document).ready"
+			],
+			[
+				"F",
+				"False\tkeyword"
+			],
+			[
+				"S",
+				"StrList\tstatement"
+			],
+			[
+				"ap",
+				"append\t.append()"
+			],
+			[
+				"select",
+				"select\tany"
+			],
+			[
+				"inner",
+				"innerHeight\t.innerHeight()"
+			],
+			[
+				"HTMLb",
+				"HTMLButtonElement\t[class: HTMLButtonElement]"
+			],
+			[
+				"tead",
+				"text-decoration\tproperty"
+			],
+			[
+				"ease",
+				"ease-in-out"
+			],
+			[
+				"borrl",
+				"border-left\tproperty"
+			],
+			[
+				"this",
+				"thisWeek\tany"
+			],
+			[
+				"$s",
+				"$scope\tAngularJS"
+			],
+			[
+				"te",
+				"text-decoration\tproperty"
+			],
+			[
+				"ea",
+				"ease-in-out"
+			],
+			[
+				"boxs",
+				"box-shadow\tproperty"
+			],
+			[
+				"drop",
+				"dropdownContent\tHTMLCollection<HTMLElement>"
+			],
+			[
+				"margin",
+				"margin-left\tproperty"
+			],
+			[
+				"raed",
+				"ready\t$(document).ready"
+			],
+			[
+				"fade",
+				"fadeIn\t.fadeIn()"
+			],
+			[
+				"bacc",
+				"background-color"
+			],
+			[
+				"on",
+				"one\t.one()"
+			],
+			[
+				"rea",
+				"ready\t$(document).ready"
+			],
+			[
+				"dro",
+				"dropDownContent\tHTMLElement | null"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"pos",
+				"pos-r\tposition: relative;"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"po",
+				"pos\tposition: ${1:relative};"
+			],
+			[
+				"ca",
+				"createHash\t(algorithm: string) => crypto$Hash"
+			],
+			[
+				"re",
+				"removeAttribute\t(name?: string) => void"
+			],
+			[
+				"end",
+				"endBtn\tHTMLElement | null"
+			],
+			[
+				"fons",
+				"font-size\tproperty"
+			],
+			[
+				"backc",
+				"background-color\tproperty"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"texa",
+				"text-align\tproperty"
+			],
+			[
+				"op",
+				"opacity\tproperty"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/D/workspace/Python/MathLib/Statistics/Vector.py",
+			"settings":
+			{
+				"buffer_size": 3829,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Anaconda Python Builder",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					""
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Test"
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Install"
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Cross-Compile (Interactive)"
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Golang Build/Go.sublime-build",
+				"Test"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Nodejs/Nodejs.sublime-build",
+					""
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Nodejs/Nodejs.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ssyaml",
+				"Set Syntax: YAML"
+			],
+			[
+				"ssc",
+				"Set Syntax: CSS3"
+			],
+			[
+				"packd",
+				"Package Control: Disable Package"
+			],
+			[
+				"sspy",
+				"Set Syntax: Python"
+			],
+			[
+				"sscss",
+				"Set Syntax: CSS3"
+			],
+			[
+				"sspython",
+				"Set Syntax: Python"
+			],
+			[
+				"ssmd",
+				"Set Syntax: Markdown GFM"
+			],
+			[
+				"packl",
+				"Package Control: List Packages"
+			],
+			[
+				"packdis",
+				"Package Control: Disable Package"
+			],
+			[
+				"packin",
+				"Package Control: Install Package"
+			],
+			[
+				"packen",
+				"Package Control: Enable Package"
+			],
+			[
+				"packdi",
+				"Package Control: Disable Package"
+			],
+			[
+				"packli",
+				"Package Control: List Packages"
+			],
+			[
+				"packre",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"ssjs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"replpy",
+				"SublimeREPL: Python"
+			],
+			[
+				"sspyt",
+				"Set Syntax: Python"
+			],
+			[
+				"ss",
+				"Set Syntax: Java"
+			],
+			[
+				"ssjava",
+				"Set Syntax: Java"
+			],
+			[
+				"pad",
+				"Package Control: Disable Package"
+			],
+			[
+				"andula",
+				"AngularJS: Delete Cache"
+			],
+			[
+				"sshtml",
+				"Set Syntax: HTML"
+			],
+			[
+				"ssjson",
+				"Set Syntax: JSON"
+			],
+			[
+				"pa",
+				"Package Control: List Packages"
+			],
+			[
+				"UI",
+				"UI: Select Color Scheme"
+			],
+			[
+				"selece",
+				"UI: Select Theme"
+			],
+			[
+				"forma",
+				"CodeFormatter: Format as Javascript Syntax"
+			],
+			[
+				"ssjons",
+				"AngularJS: Toggle - Disable JS Completions"
+			],
+			[
+				"ssmaa",
+				"Set Syntax: Markdown"
+			],
+			[
+				"sssjon",
+				"Set Syntax: JSON"
+			],
+			[
+				"formajs",
+				"CodeFormatter: Format as Javascript Syntax"
+			],
+			[
+				"HTML",
+				"HTMLBeautify"
+			],
+			[
+				"beau",
+				"HTMLBeautify"
+			],
+			[
+				"sssql",
+				"Set Syntax: SQL (PostgreSQL)"
+			],
+			[
+				"ssts",
+				"Set Syntax: TypeScript"
+			],
+			[
+				"packcd",
+				"Package Control: Disable Package"
+			],
+			[
+				"paclin",
+				"Package Control: Install Package"
+			],
+			[
+				"py",
+				"Set Syntax: Python"
+			],
+			[
+				"show",
+				"SFTP: Show Panel"
+			],
+			[
+				"sql",
+				"SQL Beautifier: Format Current SQL File"
+			],
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"App",
+				"ApplySyntax: Settings"
+			],
+			[
+				"packe",
+				"Package Control: Enable Package"
+			],
+			[
+				"ssja",
+				"Set Syntax: Java"
+			],
+			[
+				"ssxml",
+				"Set Syntax: XML"
+			],
+			[
+				"qq",
+				"Set Syntax: SQL (PostgreSQL)"
+			],
+			[
+				"sspa",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"build with",
+				"Build With: Go - Run"
+			],
+			[
+				"GOru",
+				"Build With: Go - Run"
+			],
+			[
+				"sspant",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"licence",
+				"Licence Snippet: Mozilla Public Licence v2.0 [Full Text]"
+			],
+			[
+				"replp",
+				"SublimeREPL: PowerShell"
+			],
+			[
+				"licencemo",
+				"Licence Snippet: Mozilla Public Licence v2.0 [Header]"
+			],
+			[
+				"ssj",
+				"Set Syntax: JSON"
+			],
+			[
+				"packin'",
+				"Package Control: Install Package"
+			],
+			[
+				"sssjo",
+				"Set Syntax: JSON"
+			],
+			[
+				"HT",
+				"HTMLBeautify"
+			],
+			[
+				"forjs",
+				"CodeFormatter: Format as Javascript Syntax"
+			],
+			[
+				"ssrust",
+				"Set Syntax: Rust Enhanced"
+			],
+			[
+				"css",
+				"Set Syntax: CSS3"
+			],
+			[
+				"ssht",
+				"Set Syntax: HTML"
+			],
+			[
+				"k",
+				"Keymaps: Cheat Sheet"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings"
+			],
+			[
+				"html",
+				"HTMLBeautify"
+			],
+			[
+				"p",
+				"Package Control: List Packages"
+			],
+			[
+				"ssla",
+				"Set Syntax: LaTeXing"
+			],
+			[
+				"packein",
+				"Package Control: Install Package"
+			],
+			[
+				"ini",
+				"Set Syntax: INI"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"css3",
+				"CSS3: Convert RGB Color To Hex"
+			],
+			[
+				"\\",
+				"Package Control: Install Package"
+			],
+			[
+				"sublimeREPL",
+				"SublimeREPL: Clojure"
+			],
+			[
+				"REPL:python",
+				"SublimeREPL: Python - execnet"
+			],
+			[
+				"boxy",
+				"Boxy Theme: Configuration"
+			],
+			[
+				"codefmat",
+				"CodeFormatter: Format as HTML Syntax"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 469.0,
+		"history":
+		[
+			"print(sublime)",
+			"help",
+			"sublime",
+			"import sublime",
+			"sublime",
+			"print(settings.get('color_pick_return'))",
+			"settings.set('color_pick_api_is_available',{'settings':'my_shared.sublime-settings'})",
+			"settings = sublime.load_settings('my_shared.sublime-settings')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/workspace",
+		"/D/workspace/Python",
+		"/D/workspace/Python/MathLib",
+		"/D/workspace/Python/MathLib/Statistics"
+	],
+	"file_history":
+	[
+		"/D/workspace/Website/jingyuexing.github.io/yarn.lock",
+		"/D/workspace/Python/demo07.py",
+		"/D/workspace/Python/MathLib/Statistics/Vector.py",
+		"/D/workspace/JavaScript/MathLib/.gitattributes",
+		"/D/workspace/JavaScript/MathLib/statistics/python/Vector.py",
+		"/D/workspace/Python/MathLib/Statistics/Matrix.py",
+		"/D/workspace/JavaScript/MathLib/statistics/python/Matrix.py",
+		"/D/workspace/JavaScript/Math/test/vector.js",
+		"/D/workspace/JavaScript/Math/test/test.html",
+		"/D/Sublime Text Build 3200 x64/Data/Packages/Anaconda/anaconda_server/docker/start",
+		"/D/Sublime Text Build 3200 x64/Data/Packages/Anaconda/anaconda_server/process.py",
+		"/D/Sublime Text Build 3200 x64/Packages/Python/Python.sublime-build",
+		"/D/Sublime Text Build 3200 x64/Data/Packages/Anaconda/anaconda_server/commands/pep257.py",
+		"/D/workspace/JavaScript/MathLib/MathLib.sublime-project",
+		"/D/Sublime Text Build 3200 x64/Data/Packages/User/Anaconda.sublime-settings",
+		"/D/workspace/JavaScript/Math/statistics/vector.ts",
+		"/D/workspace/JavaScript/Math/statistics/Matrix.ts",
+		"/D/workspace/JavaScript/Math/test/Matrix.js",
+		"/D/workspace/PDFducument/two/main.tex",
+		"/D/workspace/Python/AD.py",
+		"/D/workspace/jingyuexing.github.io/css/style.css",
+		"/D/workspace/Python/test_Over.py",
+		"/C/Users/Jingyuexing/Desktop/旧的 Firefox 数据/l6hrbd1p.dev-edition-default-1550732751081/extensions/manifest.json",
+		"/D/workspace/jingyuexing.github.io/test/test07.html",
+		"/D/workspace/jingyuexing.github.io/test/testActions.html",
+		"/D/workspace/jingyuexing.github.io/css/Css3-actions/animations-0-1-3.css",
+		"/D/workspace/Website/jingyuexing.github.io/public/DB/kind.json",
+		"/D/workspace/Website/jingyuexing.github.io/public/src/article.js",
+		"/D/workspace/Website/jingyuexing.github.io/public/src/main.js",
+		"/D/workspace/MdFiles/学习日志2.md",
+		"/D/workspace/MdFiles/学习日志.md",
+		"/C/Aconada/Lib/statistics.py",
+		"/D/workspace/Java/MathLib/stattistics/Vector.java",
+		"/D/Sublime Text Build 3200 x64/Data/Packages/User/Package Control.sublime-settings",
+		"/D/Sublime Text Build 3200 x64/Data/Packages/User/goTranslate.sublime-settings",
+		"/D/Sublime Text Build 3200 x64/Data/Packages/User/AngularJS-completions.sublime-settings",
+		"/D/Sublime Text Build 3200 x64/Data/Packages/AngularJS/AngularJS-completions.sublime-settings",
+		"/D/Sublime Text Build 3200 x64/Data/Installed Packages/AngularJS/jscompletions.py",
+		"/D/Sublime Text Build 3200 x64/Data/Installed Packages/AngularJS/AngularJS-js-completions.sublime-settings",
+		"/D/workspace/Website/jingyuexing.github.io/public/index.html",
+		"/D/workspace/WebFrame/angularJs-app-dev/src/app/app.component.html",
+		"/D/Sublime Text Build 3200 x64/Data/Installed Packages/AngularJS/AngularJS-sublime-package.py",
+		"/D/workspace/Website/jingyuexing.github.io/public/tpls/article.html",
+		"/D/workspace/Website/jingyuexing.github.io/public/tpls/home.html",
+		"/D/workspace/Website/Course.html",
+		"/D/workspace/Website/jingyuexing.github.io/public/DB/maoxuan.txt",
+		"/D/workspace/Website/jingyuexing.github.io/public/DB/file.json",
+		"/D/workspace/Website/jingyuexing.github.io/package.json",
+		"/D/workspace/Website/jingyuexing.github.io/public/sftp-config.json",
+		"/D/workspace/Website/jingyuexing.github.io/public/asset/css/style.css",
+		"/D/workspace/JavaScript/Math/dist/statistics/vector.js",
+		"/D/workspace/Python/demo01.py",
+		"/D/workspace/Website/jingyuexing.github.io/public/test.py",
+		"/D/workspace/Website/jingyuexing.github.io/public/src/kind.js",
+		"/D/workspace/Website/jingyuexing.github.io/public/tpls/test.html",
+		"/D/workspace/Website/jingyuexing.github.io/public/src/test.js",
+		"/D/workspace/Website/jingyuexing.github.io/public/tpls/kind.html",
+		"/D/workspace/Website/jingyuexing.github.io/public/test.html",
+		"/D/workspace/Website/jingyuexing.github.io/public/Anconda.html",
+		"/D/workspace/MdFiles/API接口文档/Zhihu.md",
+		"/D/workspace/MdFiles/API接口文档/Bilibili-API.md",
+		"/D/workspace/Objct/Important.json",
+		"/D/workspace/Website/jingyuexing.github.io/forever/devcommand.json",
+		"/D/workspace/Website/jingyuexing.github.io/public/tpls/aboutme.html",
+		"/D/workspace/Website/jingyuexing.github.io/public/CNAME",
+		"/D/workspace/Website/jingyuexing.github.io/DB/websiteDB.json",
+		"/D/workspace/WebFrame/MySelfServer/sftp-config.json",
+		"/D/workspace/MdFiles/development-environment-manual/images/cs.md",
+		"/D/workspace/MdFiles/Note/Liunx/Liunx.md",
+		"/D/Sublime Text Build 3200 x64/Data/Packages/User/Vue/DOM/v-for.sublime-snippet",
+		"/D/Sublime Text Build 3200 x64/Data/Packages/User/Commend/shenshou-caonima.sublime-snippet",
+		"/D/Sublime Text Build 3200 x64/Data/Packages/User/TypeScript/keyword/TS-keyword.sublime-completions",
+		"/D/Sublime Text Build 3200 x64/Data/Packages/JavaScript/Snippets/if.sublime-snippet",
+		"/D/workspace/MdFiles/development-environment-manual/README.md",
+		"/D/workspace/MdFiles/development-environment-manual/java.md",
+		"/D/workspace/MdFiles/API接口文档/12306.md",
+		"/D/workspace/MdFiles/API接口文档/1203.html",
+		"/D/workspace/MdFiles/API接口文档/12306城市代码.json",
+		"/D/workspace/MdFiles/C#-node.md",
+		"/D/workspace/MdFiles/API.md",
+		"/C/Users/Jingyuexing/Documents/Tencent Files/1941755817/FileRecv/2019年数据库设计.sql",
+		"/D/workspace/SQL/数据库设计(2)/goods_management.sql",
+		"/D/workspace/MdFiles/API接口文档/南方航空.html",
+		"/D/workspace/MdFiles/Note/React/React.md",
+		"/D/workspace/MdFiles/Note/README.md",
+		"/D/workspace/MdFiles/Note/python/python.md",
+		"/D/workspace/MdFiles/Note/golang/Variable.md",
+		"/D/workspace/MdFiles/Note/golang/Control.md",
+		"/D/workspace/MdFiles/Note/golang/function.md",
+		"/D/workspace/MdFiles/Note/golang/golang.md",
+		"/D/workspace/JavaScript/MathLib/statistics/rank.ts",
+		"/D/workspace/JavaScript/MathLib/README.md",
+		"/D/workspace/Spyder/node/typescript/index.ts",
+		"/D/workspace/Spyder/node/typescript/index.js",
+		"/D/workspace/Test/test.html",
+		"/D/workspace/JavaScript/Math/statistics/Rank.ts",
+		"/D/workspace/JavaScript/Math/dist/statistics/rank.js",
+		"/D/Programming Files/Cmder/vendor/init.bat",
+		"/D/workspace/SQL/goods_sale.sql",
+		"/D/workspace/temple/index.js",
+		"/D/workspace/SQL/MSQ.md",
+		"/D/workspace/SQL/数据库设计(2)/商品管理数据库数据.sql",
+		"/D/workspace/WebFrame/VoicePlayer/main.js",
+		"/D/workspace/WebFrame/VoicePlayer/src/app.css",
+		"/D/workspace/WebFrame/angularJs-app-dev/src/app/card/card.component.html",
+		"/D/workspace/WebFrame/angularJs-app-dev/src/app/card/card.component.spec.ts",
+		"/D/workspace/WebFrame/angularJs-app-dev/src/app/card/card.component.ts",
+		"/D/workspace/WebFrame/VoicePlayer/src/app.html",
+		"/D/workspace/Test/test.lisp",
+		"/D/workspace/CODE.S",
+		"/D/Sublime Text Build 3200 x64/Data/Packages/User/word/attribute.sublime-snippet",
+		"/D/Sublime Text Build 3200 x64/Data/Packages/User/Vue/DOM/v-else.sublime-snippet",
+		"/D/Sublime Text Build 3200 x64/Data/Packages/User/SQL/fun.sublime-snippet",
+		"/D/Sublime Text Build 3200 x64/Packages/SQL/snippet/fun.sublime-snippet",
+		"/C/AppData/Roaming/miniconfig/history.ini",
+		"/D/Sublime Text Build 3200 x64/Data/Installed Packages/AndroidImport/model.py",
+		"/D/Sublime Text Build 3200 x64/Data/Installed Packages/AndroidImport/Main.sublime-commands",
+		"/D/Sublime Text Build 3200 x64/Data/Installed Packages/AndroidImport/classes.json",
+		"/D/Sublime Text Build 3200 x64/Data/Installed Packages/AndroidImport/android_import.py",
+		"/D/Sublime Text Build 3200 x64/Data/Packages/User/AndroidXML/LinearLayout.sublime-snippet",
+		"/D/Sublime Text Build 3200 x64/Data/Packages/User/word/before.sublime-snippet",
+		"/F/IDEA/WebFrame/FontAwesome/fontawesome-pro-5.5/index.html",
+		"/F/IDEA/WebFrame/FontAwesome/fontawesome-pro-5.5/css/all.css",
+		"/D/workspace/Website/jingyuexing.github.io/public/src/scoreline.js",
+		"/D/workspace/Website/jingyuexing.github.io/test/app.js",
+		"/D/workspace/Website/jingyuexing.github.io/public/tpls/scoreline.html",
+		"/D/workspace/Website/jingyuexing.github.io/index.js",
+		"/D/workspace/Website/jingyuexing.github.io/public/tpls/test.txt"
+	],
+	"find":
+	{
+		"height": 48.8
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"print",
+			"data",
+			"description",
+			"type",
+			"\"\"\"",
+			"description",
+			"list",
+			"ector",
+			"arg",
+			"ClassName",
+			"div",
+			"Angular 2 Snippets (John Papa)",
+			"tag",
+			"name",
+			"iojs-v3.3.1-linux-x64.tar.gz",
+			"Chorme75.zip",
+			"0",
+			">",
+			"</center>>",
+			"<center>",
+			"<div align=\"center\">",
+			"</div>",
+			"images",
+			"MdFiles/development-environment-manual/",
+			"(https://github.com/FloatingShuYin/development-environment-manual/blob/master/",
+			"北京",
+			"</li>",
+			"}",
+			"\\d{1}",
+			"\\d{2}",
+			"\\d{3}",
+			"102",
+			"\\d{3}",
+			"253",
+			"\\d{3}",
+			"\\d{1:3}",
+			"VM1423:2",
+			"</li>",
+			"}",
+			"VM89551:2 ",
+			"5500000Z2703_01_05_wVHe73Jw%2B%2FyyzBjGSO2T0GUvEFJqxd%2Bm_43",
+			"f58tkxAojsX2",
+			"^\\d",
+			"^\\|\\d",
+			"#query_ticket",
+			"\\$\\(\\.btn92s\\)",
+			"btn92s",
+			"a.url",
+			"VM2478:2",
+			"VM1767:2",
+			"</a>",
+			"\\<\\/a\\>",
+			"163",
+			"goodsSale_type",
+			"rdSex",
+			"borrow",
+			"Borrow",
+			"borrow",
+			"Borrow",
+			"borrow",
+			"Borrow",
+			"borrow",
+			"Borrow",
+			"borrow",
+			"Borrow",
+			"reader",
+			"Reader",
+			"reader",
+			"Reader",
+			"reader",
+			"Reader",
+			"reader",
+			"Reader",
+			"reader",
+			"Reader",
+			"reader",
+			"Reader",
+			"reader",
+			"Reader",
+			"reader",
+			"Reader",
+			"reader",
+			"Reader",
+			"reader",
+			"Reader",
+			"reader",
+			"Reader",
+			"reader",
+			"Reader",
+			"reader",
+			"Reader",
+			"reader",
+			"Reader",
+			"reader",
+			"Reader",
+			"book",
+			"Book",
+			"book",
+			"Book",
+			"book",
+			"Book",
+			"book",
+			"Book",
+			"book",
+			"Book",
+			"book",
+			"Book",
+			"book",
+			"Book",
+			"book",
+			"Book",
+			"componentDidUpdate",
+			"getSnapshotBeforeUpdate",
+			"render",
+			"shouldComponentUpdate",
+			"componentDidMount",
+			"match_parent",
+			"密迹搜索",
+			"pro",
+			"6",
+			".1",
+			".0",
+			"2.0",
+			"2.",
+			"2",
+			"1.1",
+			"0.13",
+			"11"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/D/workspace/Python/MathLib/Statistics/Vector.py",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 3829,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								241,
+								241
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										254,
+										255
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"region.yellowish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										241,
+										242
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										254,
+										255
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"region.yellowish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										241,
+										242
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"c_time":
+							[
+								128,
+								3,
+								99,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								100,
+								97,
+								116,
+								101,
+								116,
+								105,
+								109,
+								101,
+								10,
+								113,
+								0,
+								67,
+								10,
+								7,
+								227,
+								7,
+								12,
+								0,
+								24,
+								7,
+								10,
+								87,
+								17,
+								113,
+								1,
+								133,
+								113,
+								2,
+								82,
+								113,
+								3,
+								46
+							],
+							"color_helper.box_height": 18,
+							"color_helper.color_scheme": "Packages/ayu/ayu-dark_new.tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": ".py",
+								"current_syntax": "Python/Python",
+								"enabled": false,
+								"last_updated": 1563173423.74
+							},
+							"git_gutter_is_enabled": false,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 43.2
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.59439776495,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 169.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.golang_build":
+	{
+		"height": 247.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 181.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "MathLib.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"impo",
+				"Objct\\Important.json"
+			],
+			[
+				"import",
+				"Objct\\Important.json"
+			],
+			[
+				"imp",
+				"Objct\\Important.json"
+			],
+			[
+				".py",
+				"Spyder\\python\\__init__.py"
+			],
+			[
+				"course",
+				"Website\\Course.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 179.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
