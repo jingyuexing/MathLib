@@ -122,4 +122,3 @@ class Vector{
         }
     }
 }
-export {Vector};

@@ -8,7 +8,7 @@ interface Matrix{
 	 * 元素对应乘积
 	 * @param data 矩阵或者向量
 	 */
-    Hardamard(data:Matrix|Vector);
+    Hardamard(data:Matrix|Vector):Matrix;
     /**
 	 * 矩阵迹运算
 	 * @param  {Matrix} matrix [迹运算对象]
