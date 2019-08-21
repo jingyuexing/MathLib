@@ -5,6 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "node",
+            "request": "launch",
+            "name": "Run single File JS",
+            "program": "${file}"
+        },
+        {
             "name": "Python: 当前文件",
             "type": "python",
             "request": "launch",
