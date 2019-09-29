@@ -1,25 +1,25 @@
 # MathLib
 在calculus中有微积分为微积分实现方法,目前还未进行实现 在`statistics`中包含统计学相关的算法,如协方差，方差，求中位数,平均值,分位数图计算
 ### statistics
-- ----`index`：[当前库的主要导出文件](statistics/index.ts)
-- ----`Variance`：[方差实现方法](statistics/Variance.ts)
-- ----`weigth_variance`:[加权平均数实现方法](statistics/weigth_variance.ts)
-- ----`QuantilePlot`:[分位数图](statistics/QuantilePlot.ts)
-- ----`Covariance`：[协方差](statistics/Covariance.ts)
-- ----`Mean`：[平均值](statistics/Mean.ts)
-- ----`harmonic`：[调和数](statistics/harmonic.ts)
-- ----`LeastSquare`：[二乘法](statistics/LeastSquare.ts)
-- ----`Media`:[中位数](statistics/Median.ts)
-- ----`Matrix`:[矩阵类](statistics/Matrix.ts),实现矩阵的计算,诸如相加,相减,矩阵的逆,矩阵转置
-- ----`rank`：[排序](statistics/rank.ts)的实现(未完全实现)
-- ----`StandardDeviation`:[标准差](statistics/Standard_Deviation.ts)
-- ----`vector`:[向量](statistics/vector.ts)的运算
-- ----`Permutations`：[阶乘](statistics/Permutations.ts)
+- ----`index`：[当前库的主要导出文件](statistics/TypeScript/index.ts)
+- ----`Variance`：[方差实现方法](statistics/TypeScript/Variance.ts)
+- ----`weigth_variance`:[加权平均数实现方法](statistics/TypeScript/weigth_variance.ts)
+- ----`QuantilePlot`:[分位数图](statistics/TypeScript/QuantilePlot.ts)
+- ----`Covariance`：[协方差](statistics/TypeScript/Covariance.ts)
+- ----`Mean`：[平均值](statistics/TypeScript/Mean.ts)
+- ----`harmonic`：[调和数](statistics/TypeScript/harmonic.ts)
+- ----`LeastSquare`：[二乘法](statistics/TypeScript/LeastSquare.ts)
+- ----`Media`:[中位数](statistics/TypeScript/Median.ts)
+- ----`Matrix`:[矩阵类](statistics/TypeScript/Matrix.ts),实现矩阵的计算,诸如相加,相减,矩阵的逆,矩阵转置
+- ----`rank`：[排序](statistics/TypeScript/rank.ts)的实现(未完全实现)
+- ----`StandardDeviation`:[标准差](statistics/TypeScript/Standard_Deviation.ts)
+- ----`vector`:[向量](statistics/TypeScript/vector.ts)的运算
+- ----`Permutations`：[阶乘](statistics/TypeScript/Permutations.ts)
 - ----`expetation`：[期望值](expetation.ts)
-- ----`sigmoid`:[激活函数](statistics/sigmoid.ts)
-- ----`angule`:[角度和弧度转换](statistics/angule.ts)
-- ----`gcd`:[求最大公约数](statistics/gcd.ts)
-- ----`Factorial`:[求n的阶乘](statistics/Factorial.ts)
+- ----`sigmoid`:[激活函数](statistics/TypeScript/sigmoid.ts)
+- ----`angule`:[角度和弧度转换](statistics/TypeScript/angule.ts)
+- ----`gcd`:[求最大公约数](statistics/TypeScript/gcd.ts)
+- ----`Factorial`:[求n的阶乘](statistics/TypeScript/Factorial.ts)
 
 ---
 增加链式调用,Matrix类以及Vector类
