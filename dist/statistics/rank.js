@@ -8,7 +8,7 @@ var Rank = /** @class */ (function () {
      * 插入排序
      * @param {Array<number>} ...a [需要排序的数据]
      */
-    Rank.prototype.insert = function (_a) {
+    Rank.insert = function (_a) {
         var a = _a.slice(0);
         var key, j;
         for (var i = 2; i <= a.length; i++) {
@@ -27,7 +27,7 @@ var Rank = /** @class */ (function () {
      * @param  {Array<number>} ...a [需要排序的数据]
      * @return {Array<number>}      [排序好的数据]
      */
-    Rank.prototype.bubbleSort = function (_a) {
+    Rank.bubbleSort = function (_a) {
         var a = _a.slice(0);
         var temp = 0;
         for (var i = 0; i < a.length - 1; i++) {
@@ -41,9 +41,9 @@ var Rank = /** @class */ (function () {
         }
         return a;
     };
-    Rank.prototype.SelectSort = function () {
+    Rank.SelectSort = function () {
     };
-    Rank.prototype.quickSort = function (_a, begin, end) {
+    Rank.quickSort = function (_a, begin, end) {
         var arry = _a.slice(0);
         var i = begin, j = end, key = arry[begin];
         while (i < j) {

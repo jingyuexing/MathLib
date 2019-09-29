@@ -1,13 +1,11 @@
 # MathLib
-在`calculus`中有微积分为微积分实现方法,目前还未进行实现 在`statistics`中包含统计学相关的算法,如协方差，方差，求中位数,平均值,分位数图计算
+在calculus中有微积分为微积分实现方法,目前还未进行实现 在`statistics`中包含统计学相关的算法,如协方差，方差，求中位数,平均值,分位数图计算
 ### statistics
 - ----`index`：[当前库的主要导出文件](statistics/index.ts)
 - ----`Variance`：[方差实现方法](statistics/Variance.ts)
 - ----`weigth_variance`:[加权平均数实现方法](statistics/weigth_variance.ts)
 - ----`QuantilePlot`:[分位数图](statistics/QuantilePlot.ts)
 - ----`Covariance`：[协方差](statistics/Covariance.ts)
-- ----`Gaussiandistributio`：[高斯正态分布](statistics/)(未实现)
-- ----`Bayes`：[贝叶斯概率计算](statistics/)（未实现）
 - ----`Mean`：[平均值](statistics/Mean.ts)
 - ----`harmonic`：[调和数](statistics/harmonic.ts)
 - ----`LeastSquare`：[二乘法](statistics/LeastSquare.ts)
@@ -43,4 +41,4 @@ console.log(weigthVariance([2,3,5,8,9,12,44],[1,1,1,2,3,2,1]))
 ```
 
 ---
-关于这个数学库如果有意见可以和我一起修改[我的github仓库](https://github.com/jingyuexing/MathLib)
+关于这个数学库如果有意见可以和我[一起修改我的github仓库](https://github.com/jingyuexing/MathLib)
