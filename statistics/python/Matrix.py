@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # @Author: Jingyuexing
 # @Date:   2019-07-11 23:56:22
-# @Last Modified by:   jingyuexing
-# @Last Modified time: 2019-07-15 14:41:13
+# @Last Modified by:   Admin
+# @Last Modified time: 2019-09-29 18:49:30
 from Vector import *
 class  Matrix:
     """docstring for  Matrix
@@ -13,7 +13,7 @@ class  Matrix:
     def __init__(self, row,col,data=[]):
         self.row = row
         self.col = col
-        self.data = []
+        self.data = data
         for x in range(0,self.row):
             self.data.append([])
         for m in self.data:
