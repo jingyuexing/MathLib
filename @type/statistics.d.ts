@@ -4,7 +4,6 @@
 /// <reference path="product.d.ts" />
 /// <reference path="product.d.ts" />
 /// <reference path="rank.d.ts" />
-/// <reference path="statistics.d.ts" />
 /// <reference path="trigonometric.d.ts" />
 /// <reference path="tensor.d.ts" />
 /// <reference path="vector.d.ts" />

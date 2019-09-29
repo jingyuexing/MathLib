@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # @Author: Jingyuexing
 # @Date:   2019-07-11 23:56:22
-# @Last Modified by:   Jingyuexing
-# @Last Modified time: 2019-07-14 10:16:01
+# @Last Modified by:   jingyuexing
+# @Last Modified time: 2019-07-15 14:41:13
 from Vector import *
 class  Matrix:
     """docstring for  Matrix
@@ -138,7 +138,10 @@ class  Matrix:
                 self.data[i][j] = args[n]
                 n=n+1
         return self
-Ma = Matrix(3,7).insertData(2,3,4,5,6,7,8,9,0,10,6,9,17,34,56,7,8,90,12,34,56)
-vector = Vector([1,12,34,56,78,90,11,34,56,78,9]).insertData(1,2,34)
-print(vector.data)
-print(Ma.data)
+if __name__ == "__main__":
+    Ma = Matrix(3,7).insertData(2,3,4,5,6,7,8,9,0,10,6,9,17,34,56,7,8,90,12,34,56)
+    vector = Vector([1,12,34,56,78,90,11,34,56,78,9]).insertData(1,2,34)
+    print(vector.data)
+    print(Ma.data)
+    import sys
+    print(sys.stdout.encoding)
