@@ -42,3 +42,4 @@ console.log(weigthVariance([2,3,5,8,9,12,44],[1,1,1,2,3,2,1]))
 
 ---
 关于这个数学库如果有意见可以和我[一起修改我的github仓库](https://github.com/jingyuexing/MathLib)
+
