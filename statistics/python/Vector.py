@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # @Author: Jingyuexing
 # @Date:   2019-07-12 00:24:07
-# @Last Modified by:   Jingyuexing
-# @Last Modified time: 2019-07-13 13:50:54
+# @Last Modified by:   jingyuexing
+# @Last Modified time: 2019-07-15 14:35:42
 import math
 class Vector:
     """docstring for Vector
@@ -64,11 +64,12 @@ class Vector:
             number -- 模值
         '''
         total = 0
-        if isinstance(data,list) or isinstance(data,Vector):
-            if isinstance(data,list):
-                for i in range(0,len(data)):
-                    total = total+data[i]**2
-                return math.sqrt(total)
+        if isinstance(data,Vector):
+            for i in range(0,len(data.data)):
+                total = total+data.data[i]**2
+            return total**(1/2)
+        else:
+            return TypeError(data+"is not Vector")
 
     def product(self,data):
         '''向量乘积
@@ -136,3 +137,8 @@ class Vector:
         for i in args:
             self.data.append(i)
         return self
+
+if __name__ == '__main__':
+    print("自身调用")
+else:
+    print("外部调用")
