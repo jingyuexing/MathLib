@@ -15,7 +15,7 @@
 - ----`StandardDeviation`:[标准差](statistics/TypeScript/Standard_Deviation.ts)
 - ----`vector`:[向量](statistics/TypeScript/vector.ts)的运算
 - ----`Permutations`：[阶乘](statistics/TypeScript/Permutations.ts)
-- ----`expetation`：[期望值](expetation.ts)
+- ----`expetation`：[期望值](statistics/TypeScript/expetation.ts)
 - ----`sigmoid`:[激活函数](statistics/TypeScript/sigmoid.ts)
 - ----`angule`:[角度和弧度转换](statistics/TypeScript/angule.ts)
 - ----`gcd`:[求最大公约数](statistics/TypeScript/gcd.ts)
