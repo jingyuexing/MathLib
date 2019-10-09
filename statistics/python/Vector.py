@@ -2,7 +2,7 @@
 # @Author: Jingyuexing
 # @Date:   2019-07-12 00:24:07
 # @Last Modified by:   jingyuexing
-# @Last Modified time: 2019-07-15 14:35:42
+# @Last Modified time: 2019-10-02 03:11:17
 import math
 class Vector:
     """docstring for Vector
