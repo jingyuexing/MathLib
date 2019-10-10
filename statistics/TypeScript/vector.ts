@@ -18,7 +18,7 @@ class Vector{
             for(let i=0;i<data.data.length;i++){
                 tempAry.push(this.data[i]+data.data[i])
             }
-            return (this,tempAry);
+            return tempAry;
         }
     }
     /**
