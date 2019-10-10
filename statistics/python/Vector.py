@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 # @Author: Jingyuexing
 # @Date:   2019-07-12 00:24:07
-# @Last Modified by:   jingyuexing
-# @Last Modified time: 2019-10-02 03:11:17
-import math
+# @Last Modified by:   Admin
+# @Last Modified time: 2019-10-10 15:02:58
 class Vector:
     """docstring for Vector
     向量
@@ -137,8 +136,3 @@ class Vector:
         for i in args:
             self.data.append(i)
         return self
-
-if __name__ == '__main__':
-    print("自身调用")
-else:
-    print("外部调用")

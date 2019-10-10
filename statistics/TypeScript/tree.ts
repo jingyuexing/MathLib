@@ -4,5 +4,5 @@ interface TNode{
 	child:any;
 }
 class Tree{
-	
+
 }
