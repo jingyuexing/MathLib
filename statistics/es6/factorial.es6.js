@@ -10,3 +10,4 @@ function Factorial(n){
     }
     return total;
 }
+console.log(Factorial(10))

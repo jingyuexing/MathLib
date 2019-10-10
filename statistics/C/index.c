@@ -1,8 +1,9 @@
 #include <stdio.h>
 int main(int argc, char const *argv[])
 {
-    for(int a =0;a<6;a++){
-        printf("你好,这是第%d",a);
-    }
+    int s = gcd(4,6);
+    double sig = sigmoid(12.00);
+    printf("%lf",sig);
+    printf("%d",s);
     return 0;
 }
