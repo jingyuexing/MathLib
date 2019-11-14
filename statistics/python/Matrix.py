@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 # @Author: Jingyuexing
 # @Date:   2019-07-11 23:56:22
-# @Last Modified by:   Admin
-# @Last Modified time: 2019-10-10 15:03:06
-from .Vector import *
+# @Last Modified by:   jingyuexing
+# @Last Modified time: 2019-11-14 22:10:04
 class  Matrix:
     """docstring for  Matrix
     row 行数
@@ -35,8 +34,32 @@ class  Matrix:
                 else:
                     self.data[i][j] = 0
         return self
-    def product(self):
-        pass
+    def product(self,Mb):
+        """矩阵相乘
+        
+        其他矩阵和其自身相乘
+        
+        Arguments:
+            Mb {Matrix} -- 相乘的矩阵
+        
+        Returns:
+            Matrix -- 相乘后的矩阵
+        """
+        if isinstance(Mb,Matrix) and self.col== Mb.row:
+            i=0
+            tempMatrix = Matrix(self.row,Mb.col)
+            while(i<self.row):
+                j=0
+                while j<Mb.col:
+                    tempMatrix.data[i][j]=0
+                    n=0
+                    while n<self.col:
+                        tempMatrix.data[i][j] = tempMatrix.data[i][j]+(self.data[i][n]*Mb.data[n][j])
+                        n=n+1
+                    j=j+1
+                i=i+1
+        return tempMatrix
+            
     def hardamard(self,data):
         '''[summary]
         
