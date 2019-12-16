@@ -12,7 +12,7 @@ class Vector{
      * @param  {vector}        data [求和向量]
      * @return {Array<number>}      [向量数据矩阵]
      */
-    add(data:Vector):Array<number>{
+    add(data:Vector):Array<number>|undefined{
         let tempAry:Array<number>=[];
         if(data instanceof Vector&& data.data.length==this.data.length){
             for(let i=0;i<data.data.length;i++){
@@ -42,7 +42,7 @@ class Vector{
      * @param  {Array<number>|Vector} data [求模的数据或向量]
      * @return {number}                    [结果]
      */
-    mod(data:Array<number>|Vector):number{
+    mod(data:Array<number>|Vector):number|undefined{
         let total:number =0;
         if(data instanceof Array || data instanceof Vector){
         if(data instanceof Array){
@@ -63,7 +63,7 @@ class Vector{
      * @param  {number|Array<number>|vector} data [求积的向量或者数组]
      * @return {number}                           [结果值]
      */
-    product(data:number|Array<number>|Vector):number|Array<number>{
+    product(data:number|Array<number>|Vector):number|Array<number>|undefined{
         let total:number =0;
         //倍数向量
         if(typeof data ==="number"){
