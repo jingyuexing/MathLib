@@ -93,7 +93,7 @@ class Matrix{
 		for(let i=0;i<matrix.col;i++){
 			for(let j=0;j<matrix.row;j++){
 				if(i==j){
-					total+=matrix[i][j];
+					total+=matrix.data[i][j];
 				}
 			}
 		}

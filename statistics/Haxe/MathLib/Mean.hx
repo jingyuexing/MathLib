@@ -1,6 +1,9 @@
-package MathLib;
 class Mean {
-    public function new(args):Void {
-        
+    public function new(data:Array<Float>):Void {
+        if(data!=null){
+            for(x in data){
+                
+            }
+        }
     }
 }
