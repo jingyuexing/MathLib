@@ -3,8 +3,17 @@ import { Vector } from "./vector";
  * 实现矩阵的加减以及逆运算
  */
 class Matrix{
+	/**
+	 * 矩阵行数
+	 */
 	row:number;
+	/**
+	 * 矩阵列数
+	 */
 	col:number;
+	/**
+	 * 矩阵数据
+	 */
 	data:Array<any>;
 	//初始化二维矩阵
 	/**
@@ -40,7 +49,7 @@ class Matrix{
 	 * @param  {Matrix} matrix [相乘矩阵]
 	 * @return {Matrix}        [生成的新矩阵]
 	 */
-	product(matrix:Matrix):Matrix{
+	product(matrix:Matrix):Matrix|undefined{
 		let tempMatrix = new Matrix(this.row,matrix.col);
 		if(matrix instanceof Matrix){
 		if(this.col==matrix.row){
@@ -61,7 +70,7 @@ class Matrix{
 	 * 元素对应乘积
 	 * @param data 矩阵或者向量
 	 */
-	Hardamard(data:Matrix|Vector){
+	Hardamard(data:Matrix|Vector):Matrix|undefined{
 		if(data instanceof Matrix){
 			let tempMatrix = new Matrix(data.row,data.col);
 			for(let i=0;i<data.col;i++){
@@ -104,12 +113,12 @@ class Matrix{
 	 * @param  {Matrix}        matrix [需要降维的矩阵]
 	 * @return {Array<number>}        [降维后返回的数组]
 	 */
-	downDimensionality(matrix:Matrix):Array<number>{
+	downDimensionality(matrix_:Matrix):Array<number>{
 		let tempAry:Array<number>=[];
-		if(matrix instanceof Matrix){
-			for(let i=0;i<matrix.col;i++){
-				for(let j=0;j<matrix.row;j++){
-					tempAry.push(matrix[i][j]);
+		if(matrix_ instanceof Matrix){
+			for(let i=0;i<matrix_.col;i++){
+				for(let j=0;j<matrix_.row;j++){
+					tempAry.push(matrix_[i][j]);
 				}
 			}
 		}

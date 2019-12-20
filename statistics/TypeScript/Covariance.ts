@@ -2,6 +2,14 @@
  * 协方差
  */
 import {Mean} from "./Mean";
+/**
+ * 求取两数组胡协方差
+ *
+ * @param   {Array<number>}  [...value_a]:Array<number>  第一个数组
+ * @param   {Array<number>}  [...value_b]:Array<number>  第二个数组
+ *
+ * @return  {number}                              求得的协方差值
+ */
 function Covariance([...value_a]:Array<number>,[...value_b]:Array<number>){
 		if(value_a.length==value_b.length){
 			let mean:any = Mean([...value_a]);

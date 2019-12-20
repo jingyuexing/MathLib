@@ -9,8 +9,14 @@
 function int(x:number):number{
 	return ~~x;
 }
-class Median{
-	constructor(number:Array<number>){
+/**
+ * 中位数
+ *
+ * @param   {Array}  number  需要取中位数的数组
+ *
+ * @return  {number}         取得的中位数
+ */
+function Median(number:Array<number>):number{
 		if(number.length%2==0){
 			/**
 			 * 当数组长度为偶数，中位数为
@@ -24,5 +30,4 @@ class Median{
 			return (number[int(number.length/2)]+number[int(number.length/2)+1])/2;
 		}
 	}
-}
 export {Median};
