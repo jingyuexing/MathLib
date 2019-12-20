@@ -1,4 +1,4 @@
-interface Rank{
+declare interface Rank{
 	/**
 	 * [insert 插入排序]
 	 * @param  {Array<number>} ...a [需要排序的数据]

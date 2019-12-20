@@ -1,4 +1,4 @@
-interface Vector{
+ declare interface Vector{
 	/**
 	 * [向量和]
 	 * @param  {Vector}        data [需要求和向量]
