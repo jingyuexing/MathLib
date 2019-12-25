@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # @Author: Jingyuexing
 # @Date:   2019-07-11 23:56:22
-# @Last Modified by:   jingyuexing
-# @Last Modified time: 2019-11-14 22:10:04
+# @Last Modified by:   Admin
+# @Last Modified time: 2019-12-24 20:07:38
 class  Matrix:
     """docstring for  Matrix
     row 行数
