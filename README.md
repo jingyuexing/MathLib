@@ -20,6 +20,7 @@
 - ----`angule`:[角度和弧度转换](statistics/TypeScript/angule.ts)
 - ----`gcd`:[求最大公约数](statistics/TypeScript/gcd.ts)
 - ----`Factorial`:[求n的阶乘](statistics/TypeScript/Factorial.ts)
+- ----`softmax`:[softmax](statistics/TypeScript/softmax.ts)
 
 ---
 增加链式调用,Matrix类以及Vector类
