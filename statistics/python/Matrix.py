@@ -2,7 +2,7 @@
 # @Author: Jingyuexing
 # @Date:   2019-07-11 23:56:22
 # @Last Modified by:   Admin
-# @Last Modified time: 2020-01-09 23:38:35
+# @Last Modified time: 2020-01-09 23:41:30
 class  Matrix:
     """docstring for  Matrix
     row 行数
