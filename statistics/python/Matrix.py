@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 # @Author: Jingyuexing
 # @Date:   2019-07-11 23:56:22
-# @Last Modified by:   Admin
-# @Last Modified time: 2020-01-09 23:41:30
+# @Last Modified by:   Jingyuexing
+# @Last Modified time: 2020-01-11 14:05:04
+import Vector
 class  Matrix:
     """docstring for  Matrix
     row 行数
@@ -14,6 +15,10 @@ class  Matrix:
         self.row = row
         self.col = col
         self.data = data
+        if isinstance(row,list):
+            self.col=len(row[0])
+            self.row=len(row)
+            self.data = row
         if isinstance(self.data[0],(list,tuple)): #假若是多层的数组
             self.col=len(self.data[0])
             self.row=len(self.data)
@@ -25,7 +30,7 @@ class  Matrix:
                     j=j+1
                 #code in here
                 i=i+1
-
+        self.shape = (self.row,self.col,self.data)
     def indentity(self):
         '''初始化为单位矩阵
 
@@ -185,4 +190,8 @@ class  Matrix:
         '''
         return self
 if __name__ == "__main__":
-    
+    def testMatrix(row,col=0,data=[]):
+        print(data)
+        print(row)
+        print(col)
+    testMatrix([[1,2,3,4,5,6,7,8],[2,6,9,12,11,33,40,9]])

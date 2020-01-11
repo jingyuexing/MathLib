@@ -5,7 +5,7 @@
 # @Last Modified time: 2019-12-01 16:27:49
 
 
-class Vector:
+class vector:
     """docstring for Vector
     向量
     """
