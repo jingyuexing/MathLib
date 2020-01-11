@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 # @Author: Jingyuexing
 # @Date:   2019-07-11 23:56:22
-# @Last Modified by:   Admin
-# @Last Modified time: 2019-12-24 20:07:38
+# @Last Modified by:   Jingyuexing
+# @Last Modified time: 2020-01-11 14:05:04
+import Vector
 class  Matrix:
     """docstring for  Matrix
     row 行数
@@ -10,16 +11,26 @@ class  Matrix:
     data 矩阵数据
     """
 
-    def __init__(self, row, col, data=[]):
+    def __init__(self, row=0, col=0, data=[]):
         self.row = row
         self.col = col
         self.data = data
-        for x in range(0, self.row):
-            self.data.append([])
-        for m in self.data:
-            for n in range(0, self.col):
-                m.append(None)
-
+        if isinstance(row,list):
+            self.col=len(row[0])
+            self.row=len(row)
+            self.data = row
+        if isinstance(self.data[0],(list,tuple)): #假若是多层的数组
+            self.col=len(self.data[0])
+            self.row=len(self.data)
+        else: #否则
+            i,j=0,0
+            while i<=self.row:
+                while j<=self.col:
+                    #code in here
+                    j=j+1
+                #code in here
+                i=i+1
+        self.shape = (self.row,self.col,self.data)
     def indentity(self):
         '''初始化为单位矩阵
 
@@ -164,3 +175,23 @@ class  Matrix:
                 self.data[i][j] = args[n]
                 n=n+1
         return self
+    def pooling(self,value):
+        '''矩阵池化
+        ```md
+        矩阵池化是将一个大的矩阵划分成小的矩阵，然后选取小的矩阵当中的最大数形成新的矩阵
+        ```
+        [description]
+        
+        Arguments:
+            value {int} -- 一个整型数据
+        
+        Returns:
+            Matrix -- 返回池化后的矩阵
+        '''
+        return self
+if __name__ == "__main__":
+    def testMatrix(row,col=0,data=[]):
+        print(data)
+        print(row)
+        print(col)
+    testMatrix([[1,2,3,4,5,6,7,8],[2,6,9,12,11,33,40,9]])
