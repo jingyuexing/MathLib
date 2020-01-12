@@ -2,7 +2,7 @@
 # @Author: Jingyuexing
 # @Date:   2019-07-11 23:56:22
 # @Last Modified by:   Jingyuexing
-# @Last Modified time: 2020-01-11 14:05:04
+# @Last Modified time: 2020-01-12 12:03:04
 import Vector
 class  Matrix:
     """docstring for  Matrix
@@ -12,25 +12,20 @@ class  Matrix:
     """
 
     def __init__(self, row=0, col=0, data=[]):
-        self.row = row
-        self.col = col
-        self.data = data
-        if isinstance(row,list):
-            self.col=len(row[0])
-            self.row=len(row)
+        if isinstance(row,(list,tuple)):
+            self.row = len(row)
+            self.col = len(row[0])
             self.data = row
-        if isinstance(self.data[0],(list,tuple)): #假若是多层的数组
-            self.col=len(self.data[0])
-            self.row=len(self.data)
-        else: #否则
-            i,j=0,0
-            while i<=self.row:
-                while j<=self.col:
-                    #code in here
-                    j=j+1
-                #code in here
-                i=i+1
-        self.shape = (self.row,self.col,self.data)
+            self.shape = (self.row,self.col,self.data)
+        else:
+            self.row = row
+            self.col = col
+            self.data = []
+            for x in range(0,self.row):
+                self.data.append([])
+                for i in range(0,self.col):
+                    self.data[x].append([])
+            self.shape = (self.row,self.col)
     def indentity(self):
         '''初始化为单位矩阵
 
@@ -96,7 +91,7 @@ class  Matrix:
                     for j in range(0, len(self.row)):
                         tempVector = data.data[i] * self.data[i][j]
             return tempVector
-
+            
     def tr(self, Ma):
         '''[summary]
 
@@ -174,6 +169,7 @@ class  Matrix:
                     break
                 self.data[i][j] = args[n]
                 n=n+1
+        self.shape=(self.row,self.col)
         return self
     def pooling(self,value):
         '''矩阵池化
@@ -188,10 +184,17 @@ class  Matrix:
         Returns:
             Matrix -- 返回池化后的矩阵
         '''
+        tempMatrix = Matrix(value.row,value.col)
         return self
+    def flat(self):
+        tempArray = []
+        row,col = self.shape
+        for i in range(0,row):
+            for j in range(0,col):
+                tempArray.append(self.data[i][j])
+        return tempArray
 if __name__ == "__main__":
-    def testMatrix(row,col=0,data=[]):
-        print(data)
-        print(row)
-        print(col)
-    testMatrix([[1,2,3,4,5,6,7,8],[2,6,9,12,11,33,40,9]])
+    NM = Matrix(2,2)
+    NM.insertData(2,3,4,5)
+    print(NM.data)
+    print(NM.flat())
