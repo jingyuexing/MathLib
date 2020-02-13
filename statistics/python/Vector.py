@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
 # @Author: Jingyuexing
 # @Date:   2019-07-12 00:24:07
-# @Last Modified by:   Admin
-# @Last Modified time: 2019-12-01 16:27:49
+# @Last Modified by:   Jingyuexing
+# @Last Modified time: 2020-01-12 17:20:47
 
 
 class vector:
     """docstring for Vector
     向量
     """
-
+    
     def __init__(self, data=[]):
         if isinstance(data, list):
             self.data = data

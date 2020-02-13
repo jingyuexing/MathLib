@@ -1,8 +1,17 @@
 class Rank {
     var data:Array<Float>;
+    /**
+     * [new description]
+     * @param  args<Float> [description]
+     * @return             [description]
+     */
     public function new(args:Array<Float>) {
         this.data=args;
     }
+    /**
+     * [insert description]
+     * @return [description]
+     */
     public function insert():Array<Float>{
         var key:Float,j:Int;
         var max = this.data.length;
@@ -17,6 +26,10 @@ class Rank {
         }
         return this.data;
     }
+    /**
+     * bubbleSort 冒泡排序
+     * @return 排序后的数组
+     */
     public function bubbleSort():Array<Float>{
         var temp:Float;
         var max = this.data.length;
@@ -31,6 +44,12 @@ class Rank {
         }
         return this.data;
     }
+    /**
+     * quickSort 快排
+     * @param  begin [description]
+     * @param  end   [description]
+     * @return       [description]
+     */
     public function quickSort(begin:Int,end:Int):Array<Float> {
         var i=begin,j=end,key=this.data[begin];
         while (i<j){

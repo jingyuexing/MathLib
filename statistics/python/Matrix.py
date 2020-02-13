@@ -2,9 +2,11 @@
 # @Author: Jingyuexing
 # @Date:   2019-07-11 23:56:22
 # @Last Modified by:   Jingyuexing
-# @Last Modified time: 2020-01-12 12:03:04
+# @Last Modified time: 2020-01-13 09:11:30
 import Vector
-class  Matrix:
+
+
+class Matrix:
     """docstring for  Matrix
     row 行数
     col 列数
@@ -12,20 +14,21 @@ class  Matrix:
     """
 
     def __init__(self, row=0, col=0, data=[]):
-        if isinstance(row,(list,tuple)):
+        if isinstance(row, (list, tuple)):
             self.row = len(row)
             self.col = len(row[0])
             self.data = row
-            self.shape = (self.row,self.col,self.data)
+            self.shape = (self.row, self.col)
         else:
             self.row = row
             self.col = col
             self.data = []
-            for x in range(0,self.row):
+            for x in range(0, self.row):
                 self.data.append([])
-                for i in range(0,self.col):
+                for i in range(0, self.col):
                     self.data[x].append([])
-            self.shape = (self.row,self.col)
+            self.shape = (self.row, self.col)
+
     def indentity(self):
         '''初始化为单位矩阵
 
@@ -41,33 +44,35 @@ class  Matrix:
                 else:
                     self.data[i][j] = 0
         return self
-    def product(self,Mb):
+
+    def product(self, Mb):
         """矩阵相乘
-        
+
         其他矩阵和其自身相乘
-        
+
         Arguments:
             Mb {Matrix} -- 相乘的矩阵
-        
+
         Returns:
             Matrix -- 相乘后的矩阵
         """
-        if isinstance(Mb,Matrix) and self.col== Mb.row:
-            i=0
-            tempMatrix = Matrix(self.row,Mb.col)
-            while(i<self.row):
-                j=0
-                while j<Mb.col:
-                    tempMatrix.data[i][j]=0
-                    n=0
-                    while n<self.col:
-                        tempMatrix.data[i][j] = tempMatrix.data[i][j]+(self.data[i][n]*Mb.data[n][j])
-                        n=n+1
-                    j=j+1
-                i=i+1
+        if isinstance(Mb, Matrix) and self.col == Mb.row:
+            i = 0
+            tempMatrix = Matrix(self.row, Mb.col)
+            while(i < self.row):
+                j = 0
+                while j < Mb.col:
+                    tempMatrix.data[i][j] = 0
+                    n = 0
+                    while n < self.col:
+                        tempMatrix.data[i][j] = tempMatrix.data[i][
+                            j] + (self.data[i][n] * Mb.data[n][j])
+                        n = n + 1
+                    j = j + 1
+                i = i + 1
         return tempMatrix
-            
-    def hardamard(self,data):
+
+    def hardamard(self, data):
         '''[summary]
 
         [description]
@@ -91,7 +96,7 @@ class  Matrix:
                     for j in range(0, len(self.row)):
                         tempVector = data.data[i] * self.data[i][j]
             return tempVector
-            
+
     def tr(self, Ma):
         '''[summary]
 
@@ -166,35 +171,42 @@ class  Matrix:
         for i in range(0, self.row):
             for j in range(0, self.col):
                 if n >= len(args):
-                    break
-                self.data[i][j] = args[n]
-                n=n+1
-        self.shape=(self.row,self.col)
+                    if isinstance(ele,(list,tuple)):
+                        for x in args[n]:
+                            self.data[i][j] = x
+                    self.data[i][j] = args[n]
+                    n = n + 1
         return self
-    def pooling(self,value):
+
+    def pooling(self, value):
         '''矩阵池化
         ```md
         矩阵池化是将一个大的矩阵划分成小的矩阵，然后选取小的矩阵当中的最大数形成新的矩阵
         ```
         [description]
-        
+
         Arguments:
             value {int} -- 一个整型数据
-        
+
         Returns:
             Matrix -- 返回池化后的矩阵
         '''
-        tempMatrix = Matrix(value.row,value.col)
-        return self
+        if isinstance(value, Matrix):
+            h, w = value.shape
+            tempList = []
+            tempMatrix = Matrix(value.row,value.col)
+            for i in range(h):
+                for j in range(w):
+                    for n in range(0,h):
+                       s=self.data[i+n][j:j+w]
+                       if len(s[0]) == h:tempMatrix.insertData(s)
+        elif isinstance(value,(tuple,list)):
+            tempMatrix = Matrix(value)
+            self.pooling(tempMatrix)
+        return tempMatrix
+
     def flat(self):
-        tempArray = []
-        row,col = self.shape
-        for i in range(0,row):
-            for j in range(0,col):
-                tempArray.append(self.data[i][j])
-        return tempArray
+        return self.map()
 if __name__ == "__main__":
-    NM = Matrix(2,2)
-    NM.insertData(2,3,4,5)
-    print(NM.data)
-    print(NM.flat())
+    Cover = Matrix([[1,2,3],[4,5,6],[7,8,9]])
+    Cover.pooling([[1,2,3],[4,5,6]])

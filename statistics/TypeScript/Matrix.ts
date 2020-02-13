@@ -123,7 +123,7 @@ class Matrix{
 				}
 			}
 		}
-		return (this,tempAry);
+		return tempAry;
 	}
 	/**
 	 * 求矩阵范数
@@ -158,13 +158,13 @@ class Matrix{
 	 * @returns {Array} 将矩阵转换成一维
 	 */
 	flat():Array<number>{
-		var tempArray:Array<number> = [];
-		this.data.forEach((ele)=>{
-			for(let i =0;i<ele.length;i++){
-				tempArray.push(ele[i]);
+		var tempAry:Array<number> = [];
+		for(let i =0;i<this.row;i++){
+			for(let j=0;j<this.col;j++){
+				tempAry.push(this.data[i][j]);
 			}
-		})
-		return tempArray
+		}
+		return tempAry;
 	}
 }
 export {Matrix};
