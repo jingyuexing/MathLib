@@ -3,10 +3,15 @@ class Matrix {
     var row:Int;
     var col:Int;
     var data:M;
-    public function new(row:Int,col:Int):Void{
+    public function new(row:Int,col:Int,data:M):Void{
         this.col=col;
         this.row=row;
+        this.data = data;
     }
+    /**
+     * 
+     * @return {Matrix} 
+     */
     public function indentity():Matrix {
         for(i in 0...this.col){
             for(j in 0...this.row){
@@ -19,6 +24,11 @@ class Matrix {
         }
         return this;
     }
+    /**
+     * 矩阵乘法
+     * @param  matrix [description]
+     * @return        [description]
+     */
     public function product(matrix:Matrix):Matrix {
         var tempMatrix = new Matrix(this.row,matrix.col);
         for(i in 0...this.row){
@@ -31,6 +41,11 @@ class Matrix {
         }
         return tempMatrix;
     }
+    /**
+     * [hardamard description]
+     * @param  data [description]
+     * @return      [description]
+     */
     public function hardamard(data:Matrix):Matrix {
         var tempMatrix:Matrix = new Matrix(data.row,data.col);
         for(i in 0...data.col){
@@ -52,6 +67,11 @@ class Matrix {
         }
         return total;
     }
+    /**
+     * [frobenius description]
+     * @param  A [description]
+     * @return   [description]
+     */
     public function frobenius(A:Matrix) {
         var tempNumbers:Float=0.0;
         for(i in 0...A.row){
@@ -61,6 +81,11 @@ class Matrix {
         }
         return Math.pow(tempNumbers,(1/2));
     }
+    /**
+     * [tran description]
+     * @param  A [description]
+     * @return   [description]
+     */
     public function tran(A:Matrix):Matrix{
         var NMatrix = new Matrix(A.col,A.row);
         for(i in 0...A.row){
