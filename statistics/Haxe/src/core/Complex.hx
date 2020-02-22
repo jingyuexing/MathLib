@@ -1,3 +1,4 @@
+package core;
 class Complex{
   var real:Float;
   var img:Float;
