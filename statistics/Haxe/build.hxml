@@ -1,0 +1,24 @@
+-cp src
+--each
+
+-main core.Complex
+-js bin/Complex.js
+--next
+
+-main core.Matrix
+-js bin/Matrix.js
+
+--next
+
+-main core.Rank
+-js bin/Rank.js
+
+--next
+
+-main core.Tensor
+-js bin/Tensor.js
+
+--next
+
+-main core.Vector
+-js bin/Vector.js

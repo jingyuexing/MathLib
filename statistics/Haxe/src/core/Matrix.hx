@@ -1,3 +1,4 @@
+package core;
 private typedef M = Array<Array<Float>>;
 class Matrix {
     var row:Int;
@@ -30,7 +31,8 @@ class Matrix {
      * @return        [description]
      */
     public function product(matrix:Matrix):Matrix {
-        var tempMatrix = new Matrix(this.row,matrix.col);
+        var t:M;
+        var tempMatrix = new Matrix(this.row,matrix.col,t);
         for(i in 0...this.row){
             for(j in 0...matrix.col){
                 tempMatrix.data[i][j]=0.0;
@@ -47,11 +49,10 @@ class Matrix {
      * @return      [description]
      */
     public function hardamard(data:Matrix):Matrix {
-        var tempMatrix:Matrix = new Matrix(data.row,data.col);
+        var tempMatrix:Matrix = new Matrix(data.row,data.col,[]);
         for(i in 0...data.col){
             for(j in 0...data.row){
                 tempMatrix.data[i][j]=this.data[i][j]*data.data[i][j];
-
             }
         }
         return tempMatrix;
@@ -87,7 +88,7 @@ class Matrix {
      * @return   [description]
      */
     public function tran(A:Matrix):Matrix{
-        var NMatrix = new Matrix(A.col,A.row);
+        var NMatrix = new Matrix(A.col,A.row,[]);
         for(i in 0...A.row){
             for(j in 0...A.col){
                 NMatrix.data[j][i]=A.data[i][j];

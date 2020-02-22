@@ -1,3 +1,4 @@
+package core;
 class Rank {
     var data:Array<Float>;
     /**

@@ -1,7 +1,7 @@
 /**
  * 中位数
  */
-import {Rank} from "./rank"
+import {Rank} from "./Rank"
 /**
  * 取整
  * @param  {x} x [输入数]

@@ -1,3 +1,4 @@
+package core;
 class Vector {
     var data:Array<Float>;
     public function new(data:Array<Float>) {
