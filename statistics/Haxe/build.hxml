@@ -1,24 +1,26 @@
 -cp src
---each
 
--main core.Complex
--js bin/Complex.js
---next
+# --each
+# -main mathlib.Complex
+# -python bin/Complex.py
+# --next
 
--main core.Matrix
--js bin/Matrix.js
+# -main mathlib.Matrix
+# -python bin/Matrix.py
 
---next
+# --next
 
--main core.Rank
--js bin/Rank.js
+# -main mathlib.Rank
+# -python bin/Rank.py
 
---next
+# --next
 
--main core.Tensor
--js bin/Tensor.js
+# -main mathlib.Tensor
+# -python bin/Tensor.py
 
---next
+# --next
 
--main core.Vector
--js bin/Vector.js
+# -main mathlib.Vector
+# -python bin/Vector.py
+
+--interp
