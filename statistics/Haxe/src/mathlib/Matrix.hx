@@ -1,8 +1,7 @@
 
     var row:Int;
     var col:Int;
-    var data:Array<Array<T>>;
-    public function new(row:Int,col:Int,?data:Array<Array<T>>):Void{
+
         this.col=col;
         this.row=row;
         this.data = data;
