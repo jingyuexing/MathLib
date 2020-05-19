@@ -1,3 +1,4 @@
+package mathlib;
 private typedef M = Array<Array<Float>>;
 class Matrix {
     var row:Int;
