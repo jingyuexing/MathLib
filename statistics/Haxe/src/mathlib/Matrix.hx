@@ -1,9 +1,9 @@
 package mathlib;
-private typedef M = Array<Array<Float>>;
+typedef M = Array<Array<Float>>;
 class Matrix<T> {
     var row:Int;
     var col:Int;
-    var data:M;
+    var data:Array<Array<T>>;
     public function new(row:Int,col:Int,?data:Array<Array<T>>):Void{
         this.col=col;
         this.row=row;
@@ -13,7 +13,7 @@ class Matrix<T> {
      * 
      * @return {Matrix} 
      */
-    public function indentity():Matrix {
+    public function indentity():Matrix<T> {
         for(i in 0...this.col){
             for(j in 0...this.row){
                 if(i==j){
@@ -30,7 +30,7 @@ class Matrix<T> {
      * @param  matrix [description]
      * @return        [description]
      */
-    public function product(matrix:Matrix):Matrix {
+    public function product(matrix:Matrix<T>):Matrix<T> {
         var t:M;
         var tempMatrix = new Matrix(this.row,matrix.col,t);
         for(i in 0...this.row){
@@ -48,8 +48,8 @@ class Matrix<T> {
      * @param  data [description]
      * @return      [description]
      */
-    public function hardamard(data:Matrix):Matrix {
-        var tempMatrix:Matrix = new Matrix(data.row,data.col,[]);
+    public function hardamard(data:Matrix<T>):Matrix<T> {
+        var tempMatrix:Matrix<T> = new Matrix(data.row,data.col,[]);
         for(i in 0...data.col){
             for(j in 0...data.row){
                 tempMatrix.data[i][j]=this.data[i][j]*data.data[i][j];
@@ -57,7 +57,7 @@ class Matrix<T> {
         }
         return tempMatrix;
     }
-    public function tr(matrix:Matrix):Float {
+    public function tr(matrix:Matrix<T>):Float {
         var total:Float=0.0;
         for(i in 0...matrix.col){
             for(j in 0...matrix.row){
@@ -73,7 +73,7 @@ class Matrix<T> {
      * @param  A [description]
      * @return   [description]
      */
-    public function frobenius(A:Matrix) {
+    public function frobenius(A:Matrix<T>) {
         var tempNumbers:Float=0.0;
         for(i in 0...A.row){
             for(j in 0...A.col){
@@ -87,7 +87,7 @@ class Matrix<T> {
      * @param  A [description]
      * @return   [description]
      */
-    public function tran(A:Matrix):Matrix{
+    public function tran(A:Matrix<T>):Matrix<T>{
         var NMatrix = new Matrix(A.col,A.row,[]);
         for(i in 0...A.row){
             for(j in 0...A.col){
