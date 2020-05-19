@@ -4,7 +4,7 @@ class Matrix {
     var row:Int;
     var col:Int;
     var data:M;
-    public function new(row:Int,col:Int):Void{
+    public function new(row:Int,col:Int){
         this.col=col;
         this.row=row;
     }
