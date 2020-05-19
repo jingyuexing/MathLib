@@ -5,8 +5,10 @@ class Matrix {
     var col:Int;
     var data:M;
     public function new(row:Int,col:Int){
+        
         this.col=col;
         this.row=row;
+
     }
     public function indentity():Matrix {
         for(i in 0...this.col){
