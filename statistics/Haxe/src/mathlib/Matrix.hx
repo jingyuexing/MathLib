@@ -1,6 +1,4 @@
-package mathlib;
-typedef M = Array<Array<Float>>;
-class Matrix<T> {
+
     var row:Int;
     var col:Int;
     var data:Array<Array<T>>;
