@@ -1,3 +1,5 @@
+package mathlib;
+
 class Vector {
     var data:Array<Float>;
     public function new(data:Array<Float>) {
@@ -16,7 +18,8 @@ class Vector {
         
     }
     public function isVertical():Bool {
-        return true;
+        var isValue:Bool= false;
+        return isValue;
     }
     public function angule() {
     }
