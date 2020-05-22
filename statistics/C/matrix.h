@@ -1,16 +1,17 @@
 #ifndef _MATRIX_H
 #define _MATRIX_H
-typedef struct{
-    int col;
+#include "matrix.h"
+typedef struct MatrixType{
     int row;
-    double matrix;
-    Matrix __THIS__;
-    double (*indentity)(Matrix *matrix);//
-    double (*product)(Matrix *other_matrix);
-    double (*hardamard)();
-    double (*frobenius)();
-    double (*tran)();
-    double (*map)();
-    double (*insertData)(double);
+    int col;
+    double data[][];
+    Matrix (*Indentity)(void);
+    Matrix (*Product)(Matrix matrix);
+    Matrix (*Hardamard)(Matrix data);
+    Matrix (*Tr)(Matrix matrix);
+    Matrix (*DownDimensionality)(Matrix matrix);
+    double (*Frobenius)(Matrix matrix);
+    Matrix (*Tran)(Matrix matrix);
+    double*(*flat)(Matrix matrix)
 }Matrix;
 #endif

@@ -1,48 +1,49 @@
-private typedef M = Array<Array<Float>>;
-class Matrix {
+package mathlib;
+
+
+class Matrix<T>{
     var row:Int;
     var col:Int;
-    var data:M;
-    public function new(row:Int,col:Int):Void{
+    var data:Array<Array<T>>;
+    public function new(row:Int,col:Int){
         this.col=col;
         this.row=row;
     }
-    public function indentity():Matrix {
+    public function indentity():Matrix<T> {
         for(i in 0...this.col){
             for(j in 0...this.row){
                 if(i==j){
-                    this.data[i][j]=1.0;
+                    this.data[i][j]=null;
                 }else{
-                    this.data[i][j]=0.0;
+                    this.data[i][j]=null;
                 }
             }
         }
         return this;
     }
-    public function product(matrix:Matrix):Matrix {
-        var tempMatrix = new Matrix(this.row,matrix.col);
+    public function product(matrix:Matrix<T>):Matrix<T> {
+        var tempMatrix:Matrix<T> = new Matrix(this.row,matrix.col);
         for(i in 0...this.row){
             for(j in 0...matrix.col){
-                tempMatrix.data[i][j]=0.0;
+                tempMatrix.data[i][j]=null;
                 for(k in 0...this.col){
-                    tempMatrix.data[i][j]+= this.data[i][k]*matrix.data[k][j];
+                    // tempMatrix.data[i][j]+= this.data[i][k]*matrix.data[k][j];
                 }
             }
         }
         return tempMatrix;
     }
-    public function hardamard(data:Matrix):Matrix {
-        var tempMatrix:Matrix = new Matrix(data.row,data.col);
+    public function hardamard(data:Matrix<T>):Matrix<T> {
+        var tempMatrix:Matrix<T> = new Matrix(data.row,data.col);
         for(i in 0...data.col){
             for(j in 0...data.row){
-                tempMatrix.data[i][j]=this.data[i][j]*data.data[i][j];
-
+                // tempMatrix.data[i][j]=this.data[i][j]*data.data[i][j];
             }
         }
         return tempMatrix;
     }
-    public function tr(matrix:Matrix):Float {
-        var total:Float=0.0;
+    public function tr(matrix:Matrix<Float>):Float{
+        var total:Float;
         for(i in 0...matrix.col){
             for(j in 0...matrix.row){
                 if(i==j){
@@ -52,8 +53,8 @@ class Matrix {
         }
         return total;
     }
-    public function frobenius(A:Matrix) {
-        var tempNumbers:Float=0.0;
+    public function frobenius(A:Matrix<Float>):Float {
+        var tempNumbers:Float;
         for(i in 0...A.row){
             for(j in 0...A.col){
                 tempNumbers+=Math.pow(A.data[i][j],2.0);
@@ -61,7 +62,7 @@ class Matrix {
         }
         return Math.pow(tempNumbers,(1/2));
     }
-    public function tran(A:Matrix):Matrix{
+    public function tran(A:Matrix<T>):Matrix<T>{
         var NMatrix = new Matrix(A.col,A.row);
         for(i in 0...A.row){
             for(j in 0...A.col){
@@ -72,3 +73,4 @@ class Matrix {
         
     }
 }
+var smax:Matrix<Int> = new Matrix(2,4);

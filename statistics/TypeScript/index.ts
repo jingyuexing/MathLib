@@ -11,10 +11,11 @@ import {Factorial as fator} from "./factorial";
 import {Permu} from "./Permutations"
 import {Vector} from "./vector";
 import {sigmoid} from "./sigmoid";
-import {Rank} from "./rank";
+import {Rank} from "./Rank";
 import {Tensor} from "./tensor";
 import {LeastSquare} from "./LeastSquare";
 import {gcd} from "./gcd";
-import {Harmonic as Har} from "./harmonic"
+import {Harmonic as Har} from "./harmonic";
+import Complex from "./Complex"
 //导出多个模块
-export {GD,Vc,SD,Har,bayes,Rank,Mean,Median,Permu,fator,Matrix,QuanPlot,WeiVar,Vector,sigmoid,Tensor,LeastSquare,gcd};
+export {GD,Vc,SD,Har,bayes,Rank,Mean,Median,Permu,fator,Matrix,QuanPlot,WeiVar,Vector,sigmoid,Tensor,LeastSquare,gcd,Complex};

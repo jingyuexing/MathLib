@@ -21,7 +21,7 @@ class Matrix{
 	 * @param {number} row [行数]
 	 * @param {number} col [列数]
 	 */
-	constructor(row:number,col:number){
+	constructor(row:number,col:number,data=[]){
 		this.row=row;//行
 		this.col=col;//列
 		this.data = Array(this.row);
@@ -69,8 +69,9 @@ class Matrix{
 	/**
 	 * 元素对应乘积
 	 * @param data 矩阵或者向量
+	 * @returns 矩阵或者是向量
 	 */
-	Hardamard(data:Matrix|Vector):Matrix|undefined{
+	Hardamard(data:Matrix|Vector):Matrix|Array<number>{
 		if(data instanceof Matrix){
 			let tempMatrix = new Matrix(data.row,data.col);
 			for(let i=0;i<data.col;i++){
@@ -89,7 +90,7 @@ class Matrix{
 					}
 				}
 			}
-			return (this,tempV);
+			return tempV;
 		}
 	}
 	/**
@@ -122,7 +123,7 @@ class Matrix{
 				}
 			}
 		}
-		return (this,tempAry);
+		return tempAry;
 	}
 	/**
 	 * 求矩阵范数
@@ -150,7 +151,20 @@ class Matrix{
 				NMatrix.data[j][i]=A.data[i][j];
 			}
 		}
-		return (this,NMatrix);
+		return NMatrix;
+	}
+	/**
+	 * @param {void} 无输入
+	 * @returns {Array} 将矩阵转换成一维
+	 */
+	flat():Array<number>{
+		var tempAry:Array<number> = [];
+		for(let i =0;i<this.row;i++){
+			for(let j=0;j<this.col;j++){
+				tempAry.push(this.data[i][j]);
+			}
+		}
+		return tempAry;
 	}
 }
 export {Matrix};
