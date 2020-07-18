@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
 # @Author: Jingyuexing
 # @Date:   2019-07-12 00:24:07
-# @Last Modified by:   Jingyuexing
-# @Last Modified time: 2020-01-12 17:20:47
+# @Last Modified by:   jingyuexing
+# @Last Modified time: 2020-07-19 05:33:40
 
 
 class Vector:
     """docstring for Vector
     向量
     """
-    
+
     def __init__(self, data=[]):
         if isinstance(data, list):
             self.data = data
@@ -138,4 +138,9 @@ class Vector:
     def insertData(self, *args):
         for i in args:
             self.data.append(i)
+        return self
+
+    def fill(self, value):
+        for x in range(len(self.data)):
+            self.data[x] = value
         return self
