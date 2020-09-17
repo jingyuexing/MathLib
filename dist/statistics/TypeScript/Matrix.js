@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Matrix = void 0;
 var vector_1 = require("./vector");
 /**
  * 实现矩阵的加减以及逆运算
@@ -11,7 +12,8 @@ var Matrix = /** @class */ (function () {
      * @param {number} row [行数]
      * @param {number} col [列数]
      */
-    function Matrix(row, col) {
+    function Matrix(row, col, data) {
+        if (data === void 0) { data = []; }
         this.row = row; //行
         this.col = col; //列
         this.data = Array(this.row);
@@ -59,6 +61,7 @@ var Matrix = /** @class */ (function () {
     /**
      * 元素对应乘积
      * @param data 矩阵或者向量
+     * @returns 矩阵或者是向量
      */
     Matrix.prototype.Hardamard = function (data) {
         if (data instanceof Matrix) {
@@ -79,7 +82,7 @@ var Matrix = /** @class */ (function () {
                     }
                 }
             }
-            return (this, tempV);
+            return tempV;
         }
     };
     /**
@@ -92,7 +95,7 @@ var Matrix = /** @class */ (function () {
         for (var i = 0; i < matrix.col; i++) {
             for (var j = 0; j < matrix.row; j++) {
                 if (i == j) {
-                    total += matrix[i][j];
+                    total += matrix.data[i][j];
                 }
             }
         }
@@ -103,16 +106,16 @@ var Matrix = /** @class */ (function () {
      * @param  {Matrix}        matrix [需要降维的矩阵]
      * @return {Array<number>}        [降维后返回的数组]
      */
-    Matrix.prototype.downDimensionality = function (matrix) {
+    Matrix.prototype.downDimensionality = function (matrix_) {
         var tempAry = [];
-        if (matrix instanceof Matrix) {
-            for (var i = 0; i < matrix.col; i++) {
-                for (var j = 0; j < matrix.row; j++) {
-                    tempAry.push(matrix[i][j]);
+        if (matrix_ instanceof Matrix) {
+            for (var i = 0; i < matrix_.col; i++) {
+                for (var j = 0; j < matrix_.row; j++) {
+                    tempAry.push(matrix_[i][j]);
                 }
             }
         }
-        return (this, tempAry);
+        return tempAry;
     };
     /**
      * 求矩阵范数
@@ -140,7 +143,20 @@ var Matrix = /** @class */ (function () {
                 NMatrix.data[j][i] = A.data[i][j];
             }
         }
-        return (this, NMatrix);
+        return NMatrix;
+    };
+    /**
+     * @param {void} 无输入
+     * @returns {Array} 将矩阵转换成一维
+     */
+    Matrix.prototype.flat = function () {
+        var tempAry = [];
+        for (var i = 0; i < this.row; i++) {
+            for (var j = 0; j < this.col; j++) {
+                tempAry.push(this.data[i][j]);
+            }
+        }
+        return tempAry;
     };
     return Matrix;
 }());

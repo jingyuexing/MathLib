@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # @Author: Jingyuexing
 # @Date:   2019-07-11 23:56:22
-# @Last Modified by:   Jingyuexing
-# @Last Modified time: 2020-01-13 09:11:30
+# @Last Modified by:   Admin
+# @Last Modified time: 2020-09-18 01:31:32
 import Vector
 
 
@@ -97,7 +97,7 @@ class Matrix:
                         tempVector = data.data[i] * self.data[i][j]
             return tempVector
 
-    def tr(self, Ma):
+    def tr(self):
         '''[summary]
 
         矩阵迹运算
@@ -108,15 +108,14 @@ class Matrix:
         Returns:
             number  -- 迹运算结果值
         '''
-        if isinstance(Ma, Matrix):
-            total = 0
-            for i in range(0, Ma.col):
-                for j in range(0, Ma.row):
-                    if i == j:
-                        total = total + Ma.data[i][j]
-            return total
+        total = 0
+        for i in range(0, self.col):
+            for j in range(0, self.row):
+                if i == j:
+                    total = total + self.data[i][j]
+        return total
 
-    def frobenius(self, A):
+    def frobenius(self):
         '''[summary]
 
         矩阵范数
@@ -128,22 +127,20 @@ class Matrix:
             number -- 范数值
         '''
         tempNums = 0
-        if isinstance(A, Matrix):
-            for i in range(0, A.row):
-                for j in range(0, A.col):
-                    tempNums = tempNums + A.data[i][j]**2
+        for i in range(0, self.row):
+            for j in range(0, self.col):
+                tempNums = tempNums + self.data[i][j]**2
             return tempNums**0.5
 
-    def tran(self, A):
+    def tran(self):
         """矩阵转置
             A 需要被转置的矩阵
         """
-        if isinstance(A, Matrix):
-            NMatrix = Matrix(A.col, A.row)
-            for i in range(0, A.row):
-                for j in range(0, A.col):
-                    NMatrix.data[j][i] = A.data[i][j]
-            return NMatrix
+        NMatrix = Matrix(self.col, self.row)
+        for i in range(0, self.row):
+            for j in range(0, self.col):
+                NMatrix.data[j][i] = self.data[i][j]
+        return NMatrix
 
     def map(self):
         '''[summary]
@@ -171,7 +168,7 @@ class Matrix:
         for i in range(0, self.row):
             for j in range(0, self.col):
                 if n >= len(args):
-                    if isinstance(ele,(list,tuple)):
+                    if isinstance(args, (list, tuple)):
                         for x in args[n]:
                             self.data[i][j] = x
                     self.data[i][j] = args[n]
@@ -193,20 +190,22 @@ class Matrix:
         '''
         if isinstance(value, Matrix):
             h, w = value.shape
-            tempList = []
-            tempMatrix = Matrix(value.row,value.col)
+            tempMatrix = Matrix(value.row, value.col)
             for i in range(h):
                 for j in range(w):
-                    for n in range(0,h):
-                       s=self.data[i+n][j:j+w]
-                       if len(s[0]) == h:tempMatrix.insertData(s)
-        elif isinstance(value,(tuple,list)):
+                    for n in range(0, h):
+                        s = self.data[i + n][j:j + w]
+                        if len(s[0]) == h:
+                            tempMatrix.insertData(s)
+        elif isinstance(value, (tuple, list)):
             tempMatrix = Matrix(value)
             self.pooling(tempMatrix)
         return tempMatrix
 
     def flat(self):
         return self.map()
+
+
 if __name__ == "__main__":
-    Cover = Matrix([[1,2,3],[4,5,6],[7,8,9]])
-    Cover.pooling([[1,2,3],[4,5,6]])
+    Cover = Matrix([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+    Cover.pooling([[1, 2, 3], [4, 5, 6]])

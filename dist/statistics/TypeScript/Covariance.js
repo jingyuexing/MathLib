@@ -7,10 +7,19 @@ var __spreadArrays = (this && this.__spreadArrays) || function () {
     return r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Cov = void 0;
 /**
  * 协方差
  */
 var Mean_1 = require("./Mean");
+/**
+ * 求取两数组胡协方差
+ *
+ * @param   {Array<number>}  [...value_a]:Array<number>  第一个数组
+ * @param   {Array<number>}  [...value_b]:Array<number>  第二个数组
+ *
+ * @return  {number}                              求得的协方差值
+ */
 function Covariance(_a, _b) {
     var value_a = _a.slice(0);
     var value_b = _b.slice(0);

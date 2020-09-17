@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.gcd = void 0;
 /**
  * gcd 最大公约数
  * @param  {number} p [description]
