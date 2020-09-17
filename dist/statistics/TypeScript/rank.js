@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Rank = void 0;
 // 排序算法
 var Rank = /** @class */ (function () {
     function Rank() {
@@ -68,4 +69,4 @@ var Rank = /** @class */ (function () {
     return Rank;
 }());
 exports.Rank = Rank;
-//# sourceMappingURL=rank.js.map
+//# sourceMappingURL=Rank.js.map
