@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.LeastSquare = void 0;
 var Mean_1 = require("./Mean");
 /**
  * 最小二乘法

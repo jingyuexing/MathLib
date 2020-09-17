@@ -1,19 +1,17 @@
 "use strict";
-var Summation = /** @class */ (function () {
-    function Summation(_a) {
-        var num = _a.slice(0);
-        /**
-         * 求和
-         * @param {Array<number>} ...num [description]
-         */
-        this.total = 0;
-        for (var i = 0; i < num.length; i++) {
-            this.total += num[i];
-        }
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Summation = void 0;
+/**
+ * 求和
+ * @param {Array<number>} ...num [description]
+ */
+function Summation(_a) {
+    var num = _a.slice(0);
+    var total = 0;
+    for (var i = 0; i < num.length; i++) {
+        total += num[i];
     }
-    Summation.prototype.Summation = function () {
-        return this.total;
-    };
-    return Summation;
-}());
+    return total;
+}
+exports.Summation = Summation;
 //# sourceMappingURL=Summation.js.map

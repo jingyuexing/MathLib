@@ -2,7 +2,7 @@
 package mathlib;
 
 class Rank {
-    public static function insert(data:Array<Float>):Array<Float>{
+    public static function insert(data:Array<Dynamic>):Array<Dynamic>{
       var key:Float,j:Int;
       var max = data.length;
       for (i in 2... max){
@@ -16,8 +16,8 @@ class Rank {
       }
       return data;
   }
-    public static function bubbleSort(data:Array<Float>):Array<Float>{
-      var temp:Float;
+    public static function bubbleSort(data:Array<Dynamic>):Array<Dynamic>{
+      var temp:Dynamic;
       var max = data.length;
       for(i in 0...(max-1)){
           for(j in 0...(max-i)){
@@ -30,7 +30,7 @@ class Rank {
       }
       return data;
   }
-    public static function quickSort(begin:Int,end:Int,data:Array<Float>):Array<Float> {
+    public static function quickSort(begin:Int,end:Int,data:Array<Dynamic>):Array<Dynamic> {
       var i=begin,j=end,key=data[begin];
       while (i<j){
           while (i<j&&data[j]>=key) j--;
@@ -49,8 +49,8 @@ class Rank {
       quickSort(i+1,end,data);
       return data;
     }
-    public static function merge(a:Array<Float>,b:Array<Float>):Array<Float> {
-        var value:Array<Float>;
+    public static function merge(a:Array<Dynamic>,b:Array<Dynamic>):Array<Dynamic> {
+        var value:Array<Dynamic>;
         return value;
     }
 }

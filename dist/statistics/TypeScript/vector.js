@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Vector = void 0;
 var Vector = /** @class */ (function () {
     /**
      * 向量
@@ -20,7 +21,7 @@ var Vector = /** @class */ (function () {
             for (var i = 0; i < data.data.length; i++) {
                 tempAry.push(this.data[i] + data.data[i]);
             }
-            return (this, tempAry);
+            return tempAry;
         }
     };
     /**

@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Permu = void 0;
 /**
  * 求阶乘
  * @param  {number} n 阶乘数值

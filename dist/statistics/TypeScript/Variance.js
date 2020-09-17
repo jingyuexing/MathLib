@@ -7,6 +7,7 @@ var __spreadArrays = (this && this.__spreadArrays) || function () {
     return r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Variance = void 0;
 var Mean_1 = require("./Mean");
 /**
  * 方差的正平方根称为该随机变量的标准差
