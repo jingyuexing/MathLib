@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Harmonic = void 0;
 /**
  * [Harmonic 调和数]
  * @param  {number} n [description]

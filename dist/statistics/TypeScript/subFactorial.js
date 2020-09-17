@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.subFactorial = void 0;
 var Factorial_1 = require("./Factorial");
 function subFactorial(x, n) {
     return Factorial_1.Factorial(x) / Factorial_1.Factorial(x - n);

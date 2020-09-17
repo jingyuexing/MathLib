@@ -14,7 +14,7 @@ class Matrix{
 	/**
 	 * 矩阵数据
 	 */
-	data:Array<any>;
+	data:number[][];
 	//初始化二维矩阵
 	/**
 	 * 初始化矩阵
@@ -71,7 +71,7 @@ class Matrix{
 	 * @param data 矩阵或者向量
 	 * @returns 矩阵或者是向量
 	 */
-	Hardamard(data:Matrix|Vector):Matrix|Array<number>{
+	Hardamard(data:Matrix|Vector):Matrix{
 		if(data instanceof Matrix){
 			let tempMatrix = new Matrix(data.row,data.col);
 			for(let i=0;i<data.col;i++){

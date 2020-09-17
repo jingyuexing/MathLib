@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Factorial = void 0;
 /**
  * [Factorial 阶乘]
  * @param  {number} n [阶乘数]

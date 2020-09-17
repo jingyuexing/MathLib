@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.expetation = void 0;
 /**
  * [expetation 期望值]
  * @param  {Array<number>} ...x [样本空间]
