@@ -92,6 +92,7 @@ class List:
         prevNode = self.findPrevious(item)
         if(not (prevNode.child == None)):
             prevNode.child = prevNode.child.child
+            self.length = self.length -1
         return self
 
 
