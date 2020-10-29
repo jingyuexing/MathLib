@@ -2,8 +2,8 @@
 在calculus中有微积分为微积分实现方法,目前还未进行实现 在`statistics`中包含统计学相关的算法,如协方差，方差，求中位数,平均值,分位数图计算
 ### statistics
 - ----`index`：[当前库的主要导出文件](statistics/TypeScript/src/index.ts)
-- ----`Variance`：[方差实现方法](statistics/TypeScript/src/Variance.ts) [haxe]() [python](statistics/python/src/)
-- ----`weigth_variance`:[加权平均数实现方法](statistics/TypeScript/weigth_variance.ts)
+- ----`Variance`：[方差实现方法](statistics/TypeScript/src/Variance.ts) [python](statistics/python/src/var.py)
+- ----`weigth_variance`:[加权平均数实现方法](statistics/TypeScript/src/weigth_variance.ts)
 - ----`QuantilePlot`:[分位数图](statistics/TypeScript/src/src/QuantilePlot.ts)
 - ----`Covariance`：[协方差](statistics/TypeScript/src/Covariance.ts)
 - ----`Mean`：[平均值](statistics/TypeScript/src/Mean.ts) [py](statistics/python/src/Mean.py)
