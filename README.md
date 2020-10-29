@@ -11,7 +11,7 @@
 - ----`LeastSquare`：[二乘法](statistics/TypeScript/src/LeastSquare.ts)
 - ----`Media`:[中位数](statistics/TypeScript/src/Median.ts) [py](statistics/python/src/Median.py)
 - ----`Matrix`:[矩阵类](statistics/TypeScript/src/Matrix.ts) [C](statistics/C/src/matrix.c) [py](statistics/python/src/Matrix.py) [haxe](statistics/Haxe/src/mathlib/Matrix.hx),实现矩阵的计算,诸如相加,相减,矩阵的逆,矩阵转置
-- ----`rank`：[排序](statistics/TypeScript/src/rank.ts)的实现(未完全实现) [py](statistics/python/src/Rank.py)
+- ----`rank`：[排序](statistics/TypeScript/src/rank.ts) [py](statistics/python/src/Rank.py) 的实现(未完全实现)
 - ----`StandardDeviation`:[标准差](statistics/TypeScript/src/Standard_Deviation.ts)
 - ----`vector`:[向量](statistics/TypeScript/src/vector.ts)的运算 [py](statistics/python/src/Vector.py)
 - ----`Permutations`：[阶乘](statistics/TypeScript/src/Permutations.ts)
