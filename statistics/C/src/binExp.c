@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 /**
  * 快速幂
  * 其核心思想是将n转化为几个2次幂的和而后进行对乘机求和
@@ -8,6 +6,7 @@
  *
  * @return  double     运算结果
  */
+#include <stdio.h>
 double binExp(long double a,int n){
   double k = 1.0;
   a = a;
