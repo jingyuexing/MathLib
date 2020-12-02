@@ -1,4 +1,4 @@
-#include "sigmoid.h"
+#include "./sigmoid.h"
 /**
  * [sigmoid description]
  * @param  x 输入数
