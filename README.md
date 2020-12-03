@@ -95,6 +95,7 @@ console.log(weigthVariance([2,3,5,8,9,12,44],[1,1,1,2,3,2,1]))
 - ☐ 完成Matrix算法的各类语言实现
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+
 Archive:
 - ✔ 完成Softmax算法的 TS 实现 @done (20-12-03 14:28)
 - ✔ 完成link链表的 TS 的实现 @done (20-12-03 14:27)
