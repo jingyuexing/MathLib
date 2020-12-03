@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 # @Author: Admin
 # @Date:   2020-01-10 00:58:05
-# @Last Modified by:   jingyuexing
-# @Last Modified time: 2020-07-19 05:50:49
+# @Last Modified by:   Jingyuexing
+# @Last Modified time: 2020-12-03 14:07:09
 
 
 class Rank(object):
     """排序算法"""
-
+    @staticmethod
     def insert(self, data=[]):
         if isinstance(data, list):
             for i in range(2, len(data)):
@@ -18,14 +18,14 @@ class Rank(object):
                     j = j - 1
                     data[j + 1] = key
         return data
-
+    @staticmethod
     def bubbleSort(self, data=[]):
         for i in range(1, len(data)):
             for j in range(0, len(data) - i):
                 if data[j] > data[j + 1]:
                     data[j], data[j + 1] = data[j + 1], data[j]
         return data
-
+    @staticmethod
     def quickSort(self, array=[], begin=0, end=0):
         i, j, key = begin, end, array[begin]
         while i < j:
