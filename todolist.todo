@@ -8,7 +8,6 @@
  ☐ 完成Matrix算法的 Python 实现
  ☐ 完成link链表的 C 的实现
  ☐ 完成link链表的 CPP 的实现
- ☐ 完成link链表的 CS 的实现
  ☐ 完成link链表的 JS 的实现
  ☐ 完成link链表的 Go 的实现
  ☐ 完成link链表的 Haxe 的实现
@@ -30,7 +29,6 @@
  ☐ 完成Rank排序 Java 的算法的实现
  ☐ 完成Sgmoid算法的 C 实现
  ☐ 完成Sgmoid算法的 CPP 实现
- ☐ 完成Sgmoid算法的 CS 实现
  ☐ 完成Sgmoid算法的 JS 实现
  ☐ 完成Sgmoid算法的 TS 实现
  ☐ 完成Sgmoid算法的 Go 实现
@@ -53,6 +51,8 @@
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ 完成link链表的 CS 的实现 @done (20-12-04 12:12)
+ ✔ 完成Sgmoid算法的 CS 实现 @done (20-12-04 12:12)
  ✔ 完成Softmax算法的 TS 实现 @done (20-12-03 14:28)
  ✔ 完成link链表的 TS 的实现 @done (20-12-03 14:27)
  ✔ 完成Vector向量 TS 的实现 @done (20-12-03 14:27)
