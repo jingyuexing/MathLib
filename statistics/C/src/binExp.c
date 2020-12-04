@@ -9,7 +9,6 @@
 #include <stdio.h>
 double binExp(long double a,int n){
   double k = 1.0;
-  a = a;
   while (n){
     if((n&1)==1){
       k *= a;
