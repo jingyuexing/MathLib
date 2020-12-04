@@ -54,8 +54,8 @@ class Rank{
 			}
 		}
 		arry[i]=key;
-		this.quickSort(arry,begin,i-1);
-		this.quickSort(arry,i+1,end);
+		Rank.quickSort(arry,begin,i-1);
+		Rank.quickSort(arry,i+1,end);
 		return arry;
 	}
 }
