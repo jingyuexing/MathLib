@@ -2,29 +2,47 @@
 * @Author: Jingyuexing
 * @Date:   2020-10-25 21:40:25
 * @Last Modified by:   Jingyuexing
-* @Last Modified time: 2020-10-25 22:20:39
 */
 
 #include "Link.h"
 
-/**
- * 插入节点
- * @param  element 节点存储的元素
- * @return         一个节点指针
- */
-Node *insert(Node element){
-    Node *newNode;
+
+Node *init(double element){
+    Node *newNode = (Node *)malloc(sizeof(Node));
+    (*newNode).child = NULL;
+    (*newNode).parent = NULL;
+    (*newNode).element = element;
     return newNode;
 }
 
 /**
- * 移除节点
- * @param  node 需要移除的节点
- * @return Node  完成移除后的节点
+ * 初始化节点
+ * @param  element 元素
+ * @return         节点
  */
-Node *remove(double item){
-    Node *newNode;
-    return newNode;
+Node *insert(Node *root,double item,double element){
+    Node *newNode = init(element);
+    Node *findOne = find(root,item);
+    newNode->parent = findOne;
+    findOne->child = newNode;
+    return root;
+}
+
+
+
+
+/**
+ * 移除节点
+ * @param  root 根节点
+ * @param  item 元素项
+ * @return      [description]
+ */
+Node *remove(Node *root,double item){
+    Node *findOne = find(root,item);
+    findOne->parent = findOne->child;
+    findOne->child->parent = findOne->parent;
+    free(findOne);
+    return root;
 }
 
 /**
@@ -34,7 +52,7 @@ Node *remove(double item){
  * @return      返回查找到的节点
  */
 Node *find(Node *root,double item){
-    Node *currNode;
+    Node *currNode =NULL;
     currNode = root;
     while (currNode->element!=item) {
         currNode = currNode->child;
@@ -42,10 +60,24 @@ Node *find(Node *root,double item){
     return currNode;
 }
 
-Node findPrevious(Node *root,item){
+Node findPrevious(Node *root,double item){
     Node *node = find(root,item);
     while ((!node->child!=0) && node->child->element!=item) {
         node = node->child;
     }
     return *node;
+}
+
+/**
+ * 最后一个节点
+ * @param  root 根节点
+ * @return      node
+ */
+Node last(Node *root){
+    Node *currNode;
+    currNode = root->child;
+    while (currNode != NULL) {
+        currNode = currNode->child;
+    }
+    return *currNode;
 }
