@@ -2,24 +2,30 @@
 * @Author: Jingyuexing
 * @Date:   2020-10-25 21:40:25
 * @Last Modified by:   Jingyuexing
-* @Last Modified time: 2020-12-08 15:44:46
 */
 
 #include "Link.h"
 
+
+Node *init(double element){
+    Node *newNode = (Node *)malloc(sizeof(Node));
+    (*newNode).child = NULL;
+    (*newNode).parent = NULL;
+    (*newNode).element = element;
+    return newNode;
+}
 
 /**
  * 初始化节点
  * @param  element 元素
  * @return         节点
  */
-Node *init(double element){
-    Node *newNode = (Node *)malloc(sizeof(Node));
-    newNode->child = NULL;
-    newNode->parent =NULL;
-    newNode->index = 0;
-    newNode->element = element;
-    return newNode;
+Node *insert(Node *root,double item,double element){
+    Node *newNode = init(element);
+    Node *findOne = find(root,item);
+    newNode->parent = findOne;
+    findOne->child = newNode;
+    return root;
 }
 
 
@@ -50,9 +56,10 @@ Node *insert(Node *root,double element){
  * @return      [description]
  */
 Node *remove(Node *root,double item){
-    Node *currNode = find(root,item);
-    currNode->parent->child = currNode->child;
-    free(currNode);
+    Node *findOne = find(root,item);
+    findOne->parent = findOne->child;
+    findOne->child->parent = findOne->parent;
+    free(findOne);
     return root;
 }
 
@@ -63,7 +70,7 @@ Node *remove(Node *root,double item){
  * @return      返回查找到的节点
  */
 Node *find(Node *root,double item){
-    Node *currNode;
+    Node *currNode =NULL;
     currNode = root;
     while (currNode->element!=item) {
         currNode = currNode->child;

@@ -7,8 +7,9 @@ typedef struct Link{
     int index;
     double element;
 }Node;
-Node *find(Node *root,double item);
+
 Node *init(double element);
-Node *insert(Node *root,double item);
-Node last(Node *root);
+Node *insert(Node *root,double item,double element);
+Node *remove(Node *root,double item);
+Node *find(Node *root,double item);
 #endif
