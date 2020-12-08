@@ -6,7 +6,6 @@
  ☐ 完成Matrix算法的 Haxe 实现
  ☐ 完成Matrix算法的 Java 实现
  ☐ 完成Matrix算法的 Python 实现
- ☐ 完成link链表的 C 的实现
  ☐ 完成link链表的 CPP 的实现
  ☐ 完成link链表的 JS 的实现
  ☐ 完成link链表的 Go 的实现
@@ -51,6 +50,7 @@
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ 完成link链表的 C 的实现 @done (20-12-08 20:38)
  ✔ 完成link链表的 CS 的实现 @done (20-12-04 12:12)
  ✔ 完成Sgmoid算法的 CS 实现 @done (20-12-04 12:12)
  ✔ 完成Softmax算法的 TS 实现 @done (20-12-03 14:28)
