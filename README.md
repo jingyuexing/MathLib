@@ -50,7 +50,6 @@ console.log(weigthVariance([2,3,5,8,9,12,44],[1,1,1,2,3,2,1]))
 - ☐ 完成Matrix算法的 Haxe 实现
 - ☐ 完成Matrix算法的 Java 实现
 - ☐ 完成Matrix算法的 Python 实现
-- ☐ 完成link链表的 C 的实现
 - ☐ 完成link链表的 CPP 的实现
 - ☐ 完成link链表的 CS 的实现
 - ☐ 完成link链表的 JS 的实现
@@ -97,6 +96,7 @@ console.log(weigthVariance([2,3,5,8,9,12,44],[1,1,1,2,3,2,1]))
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 
 Archive:
+- ✔ 完成link链表的 C 的实现 @done (20-12-08 20:38)
 - ✔ 完成Softmax算法的 TS 实现 @done (20-12-03 14:28)
 - ✔ 完成link链表的 TS 的实现 @done (20-12-03 14:27)
 - ✔ 完成Vector向量 TS 的实现 @done (20-12-03 14:27)
