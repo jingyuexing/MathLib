@@ -30,24 +30,6 @@ Node *insert(Node *root,double item,double element){
 
 
 
-/**
- * 插入节点
- * @param  root    根节点
- * @param  element 元素
- * @return         [description]
- */
-Node *insert(Node *root,double element){
-    Node *newNode = init(element);
-    Node *currNode = root->child;
-    while (currNode->child !=NULL) {
-        currNode = currNode->child;
-    }
-    (*newNode).index++;
-    currNode->child = newNode;
-    newNode->parent = currNode;
-    return root;
-}
-
 
 /**
  * 移除节点
