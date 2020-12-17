@@ -19,9 +19,3 @@ class Complex{
     return new Complex(a.real*this.real-a.img*this.img,a.real*this.real);
   }
 }
-class Main{
-  static function main() {
-    var s:Complex = new Complex(12,4);
-    var f:Complex = new Complex(33,7);
-  }
-}

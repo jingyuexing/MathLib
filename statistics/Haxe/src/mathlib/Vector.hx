@@ -35,7 +35,8 @@ abstract Vector<Dynamic>(Array<Dynamic>) {
 		} */
         return total;
 	}
-	@:op([]) public function index(n:Int) {
+	@:op([])
+    public function index(n:Int) {
         return this[n];
     }
 	public function mod(data:Array<Float>) {
