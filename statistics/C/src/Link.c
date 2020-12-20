@@ -1,12 +1,18 @@
 /*
 * @Author: Jingyuexing
 * @Date:   2020-10-25 21:40:25
-* @Last Modified by:   Jingyuexing
+* @Last Modified by:   jingyuexing
 */
 
 #include "Link.h"
 
 
+/**
+ * 初始化元素
+ * @param  element 元素
+ * @return         新的节点
+ * @privie
+ */
 Node *init(double element){
     Node *newNode = (Node *)malloc(sizeof(Node));
     (*newNode).child = NULL;
@@ -16,9 +22,11 @@ Node *init(double element){
 }
 
 /**
- * 初始化节点
+ * 插入节点
+ * @param  root    根节点
+ * @param  item    根节点中的元素
  * @param  element 元素
- * @return         节点
+ * @return         根节点
  */
 Node *insert(Node *root,double item,double element){
     Node *newNode = init(element);
@@ -60,12 +68,18 @@ Node *find(Node *root,double item){
     return currNode;
 }
 
-Node findPrevious(Node *root,double item){
+/**
+ * [findPrevious description]
+ * @param  root [description]
+ * @param  item [description]
+ * @return      [description]
+ */
+Node *findPrevious(Node *root,double item){
     Node *node = find(root,item);
-    while ((!node->child!=0) && node->child->element!=item) {
+    while (!(node->child==0) && node->child->element!=item) {
         node = node->child;
     }
-    return *node;
+    return node;
 }
 
 /**
