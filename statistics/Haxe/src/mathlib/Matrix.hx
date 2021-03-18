@@ -70,7 +70,11 @@ class Matrix<T>{
             }
         }
         return NMatrix;
-        
+
+    }
+    @:forwardStatics
+    public function name() {
+
     }
 }
 var smax:Matrix<Int> = new Matrix(2,4);

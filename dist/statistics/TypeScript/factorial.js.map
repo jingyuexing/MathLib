@@ -1,1 +1,0 @@
-{"version":3,"file":"factorial.js","sourceRoot":"","sources":["../../../statistics/TypeScript/factorial.ts"],"names":[],"mappings":";;;AAAA;;;;GAIG;AACH,SAAS,SAAS,CAAC,CAAQ;IACzB,IAAI,KAAK,GAAQ,CAAC,EAAC,CAAC,GAAQ,CAAC,GAAC,CAAC,CAAC;IAChC,KAAI,IAAI,CAAC,GAAC,CAAC,EAAC,CAAC,IAAE,CAAC,EAAC,CAAC,EAAE,EAAC;QACpB,KAAK,IAAE,CAAC,CAAC;KACT;IACD,OAAO,KAAK,CAAC;AACd,CAAC;AACM,8BAAS"}
