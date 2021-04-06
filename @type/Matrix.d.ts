@@ -1,5 +1,5 @@
 /// <reference path="./vector.d.ts" />
-declare interface Matrix{
+declare class Matrix{
     /**
 	 * 初始化为一个单位矩阵
 	 */
