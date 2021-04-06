@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>todolist.todo</title>
+<style type="text/css">
+ * {
+  margin:0; padding:0;
+ }
+ span { display: inline-block; }         /* prevent unsupposed empty lines */
+ span[class|="tag"] { display: inline; } /* add proper wrapping for tags */
+ pre {
+  margin: 30px;
+  font-family: "Consolas", "Monaco", monospace;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 20px;
+  white-space: pre-wrap;
+ }
+ .empty-line {
+  /* span, either empty or containing whitespaces/tabs */
+ }
+ body { background: rgba(239,233,183,1.0); color: rgba(0,0,0,0.31); font-weight: normal; font-style: normal; }
+.done { font-weight: normal; font-style: italic; color: rgba(0,0,0,0.56); }
+.tag { font-weight: bold; font-style: normal; color: rgba(160,46,43,0.6); }
+.note { color: rgba(133,130,102,1.0); font-weight: normal; font-style: normal; }
+.open { font-weight: normal; font-style: italic; color: rgba(0,0,0,1.0); }
+.bullet-done { font-weight: bold; font-style: normal; color: rgba(0,114,62,1.0); }
+.bullet-pending { color: rgba(0,0,0,0.4); font-weight: normal; font-style: normal; }
+.bullet-cancelled { color: rgba(182,1,1,1.0); font-weight: normal; font-style: normal; }
+.cancelled { font-weight: normal; font-style: italic; color: rgba(104,101,79,1.0); }
+.tag-done { color: rgba(0,0,0,0.31); font-weight: normal; font-style: normal; }
+.tag-cancelled { color: rgba(0,0,0,0.31); font-weight: normal; font-style: normal; }
+.header { background: rgba(0,0,0,0.06); font-weight: bold; font-style: normal; color: rgba(188,100,74,1.0); width: 100%; }
+.sep-archive { color: rgba(0,0,0,0.27); font-weight: normal; font-style: normal; }
+.sep { color: rgba(0,0,0,0.27); font-weight: normal; font-style: normal; }
+a { font-weight: bold; font-style: normal; color: rgba(0,62,114,0.56); }
+.tag-today { background: rgba(234,221,78,1.0); font-weight: bold; font-style: normal; color: rgba(0,0,0,1.0); }
+.tag-high { background: rgba(255,127,0,1.0); font-weight: bold; font-style: normal; color: rgba(0,0,0,1.0); }
+.tag-low { background: rgba(34,34,34,1.0); font-weight: bold; font-style: normal; color: rgba(255,255,255,1.0); }
+.tag-critical { background: rgba(255,0,0,1.0); font-weight: bold; font-style: normal; color: rgba(0,0,0,1.0); }
+</style>
+</head>
+<body>
+<pre>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Matrix算法的 C 实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Matrix算法的 CPP 实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Matrix算法的 CS 实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Matrix算法的 JS 实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Matrix算法的 GO 实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Matrix算法的 Haxe 实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Matrix算法的 Java 实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Matrix算法的 Python 实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成link链表的 CPP 的实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成link链表的 JS 的实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成link链表的 Go 的实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成link链表的 Haxe 的实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成link链表的 Java 的实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成link链表的 Python 的实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Vector向量 C 的实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Vector向量 CPP 的实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Vector向量 CS 的实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Vector向量 JS 的实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Vector向量 Go 的实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Vector向量 Haxe 的实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Vector向量 Java 的实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Rank排序 C 的算法的实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Rank排序 CPP 的算法的实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Rank排序 JS 的算法的实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Rank排序 Go 的算法的实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Rank排序 Haxe 的算法的实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Rank排序 Java 的算法的实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Sgmoid算法的 C 实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Sgmoid算法的 CPP 实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Sgmoid算法的 JS 实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Sgmoid算法的 TS 实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Sgmoid算法的 Go 实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Sgmoid算法的 Haxe 实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Sgmoid算法的 Java 实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Softmax算法的 C 实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Softmax算法的 CPP 实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Softmax算法的 JS 实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Softmax算法的 GO 实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Softmax算法的 Haxe 实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Softmax算法的 Java 实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Rank排序各类语言算法的实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Sgmoid算法的各类语言实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Vector各类语言的实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成link链表的各类语言的实现</span>
+<span class="open"> <span class="bullet-pending">☐</span> 完成Matrix算法的各类语言实现</span>
+<span class="empty-line"></span>
+<span class="empty-line"></span>
+<span class="sep-archive">＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿</span>
+<span class="header">Archive:</span>
+<span class="done"> <span class="bullet-done">✔</span> 完成link链表的 CS 的实现 <span class="tag-done">@done (20-12-04 12:03)</span></span>
+<span class="done"> <span class="bullet-done">✔</span> 完成Softmax算法的 CS 实现 <span class="tag-done">@done (20-12-04 11:17)</span></span>
+<span class="done"> <span class="bullet-done">✔</span> 完成Sgmoid算法的 CS 实现 <span class="tag-done">@done (20-12-04 11:16)</span></span>
+<span class="done"> <span class="bullet-done">✔</span> 完成Vector向量 Python 的实现 <span class="tag-done">@done (20-12-03 14:41)</span></span>
+<span class="done"> <span class="bullet-done">✔</span> 完成Softmax算法的 Python 实现 <span class="tag-done">@done (20-12-03 14:41)</span></span>
+<span class="done"> <span class="bullet-done">✔</span> 完成link链表的 C 的实现 <span class="tag-done">@done (20-12-08 20:38)</span></span>
+<span class="done"> <span class="bullet-done">✔</span> 完成Sgmoid算法的 CS 实现 <span class="tag-done">@done (20-12-04 12:12)</span></span>
+<span class="done"> <span class="bullet-done">✔</span> 完成Softmax算法的 TS 实现 <span class="tag-done">@done (20-12-03 14:28)</span></span>
+<span class="done"> <span class="bullet-done">✔</span> 完成link链表的 TS 的实现 <span class="tag-done">@done (20-12-03 14:27)</span></span>
+<span class="done"> <span class="bullet-done">✔</span> 完成Vector向量 TS 的实现 <span class="tag-done">@done (20-12-03 14:27)</span></span>
+<span class="done"> <span class="bullet-done">✔</span> 完成Rank排序 TS 的算法的实现 <span class="tag-done">@done (20-12-03 14:27)</span></span>
+<span class="done"> <span class="bullet-done">✔</span> 完成Rank排序 Python 的算法的实现 <span class="tag-done">@done (20-12-03 14:27)</span></span>
+<span class="done"> <span class="bullet-done">✔</span> 完成Matrix算法的 TS 实现 <span class="tag-done">@done (20-12-03 14:27)</span></span>
+<span class="done"> <span class="bullet-done">✔</span> 完成Sgmoid算法的 Python 实现 <span class="tag-done">@done (20-12-03 14:26)</span></span>
+</pre>
+</body></html>
