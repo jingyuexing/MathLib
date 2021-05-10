@@ -12,7 +12,6 @@ struct list{
     ListNode *head;
     struct list *(*init)(double element);
     ListNode *(*indexOf)(int index);
-    // int (* )();
     void (*insert)();
     void (*remove)(int index);
     ListNode *(*find)(double item);
@@ -56,12 +55,6 @@ ListNode *indexOf(List l,int index);
  * @return      节点
  */
 ListNode *find(double item);
-/**
- * 初始化
- * @param  element 元素
- * @return         初始化后的节点
- */
-ListNode *init(double element);
 /**
  * 添加元素,默认添加到末尾
  * @param l       目标列表

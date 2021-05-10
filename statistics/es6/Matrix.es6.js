@@ -6,4 +6,4 @@ class Matrix{
         
     }
 }
-exports.Matrix = Matrix;
+export { Matrix };
