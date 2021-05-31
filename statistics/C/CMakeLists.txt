@@ -1,5 +1,13 @@
 cmake_minimum_required(VERSION 2.8)
 project(MathLib)
+
+include(CheckFunctionExists)
+include(CheckIncludeFiles)
+
+# 检查头文件是否存在
+check_include_files(binTree.h HAVE_BINTREE)
+# 检查函数是否存在
+check_function_exists()
 # generate the share library from LINK
 add_library(Link SHARED src/Link.c)
 target_include_directories(Link PUBLIC ${PROJECT_SOURCE_DIR}/include)
