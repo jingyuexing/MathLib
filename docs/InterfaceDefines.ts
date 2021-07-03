@@ -133,7 +133,7 @@ interface IStack {
     push(item:number):number;
     /**
      * [pop description]
-     * @param  {number} item [description]
+     * @param  {number} item 出栈元素
      * @return {number}      [description]
      */
     pop(item:number):number;
@@ -148,4 +148,3 @@ interface IStack {
 
 interface ITree extends IList {}
 
-let m:IStack;
