@@ -1,3 +1,4 @@
+import {Matrix} from "./Matrix";
 class Vector{
     data:Array<number>;
     /**
@@ -60,10 +61,12 @@ class Vector{
     }
     /**
      * 向量积
+     * 向量点乘 dot product 为 x_{1}x_{2} + y_{1}y_{2}
+     * 向量叉乘             为 |v_{1}|* |v_{2}| * Sin(angle)
      * @param  {number|Array<number>|vector} data [求积的向量或者数组]
      * @return {number}                           [结果值]
      */
-    product(data:number|Array<number>|Vector):number|Array<number>|undefined{
+    dotProduct(data:number|Array<number>|Vector):number|Array<number>|undefined{
         let total:number =0;
         //倍数向量
         if(typeof data ==="number"){
@@ -84,8 +87,17 @@ class Vector{
         }
         //乘积(点积)
         if(data instanceof Vector){
-            return (this,this.product(data.data));
+            return (this,this.dotProduct(data.data));
         }
+    }
+    /**
+     * 向量的叉乘 可视作 一行 n列矩阵相乘  向量 A  向量 B 相乘
+     * 可视作 A_{n*m} * B_{n*m} = A_{m*n} * B_{n*m}
+     *
+     * @param  {number|Array<number>|Vector} data [description]
+     * @return {any}                              [description]
+     */
+    product(data:number|Array<number>|Vector):any{
     }
     /**
      * 判断是否和另一个向量垂直,垂直返回真,不垂直返回假
@@ -94,7 +106,7 @@ class Vector{
      */
     isVertical(dada:Vector|Array<number>):boolean{//点积的值为零返回真
         if(dada instanceof Array){
-            if(this.product(dada)==0){
+            if(this.dotProduct(dada)==0){
                 return true;
             }
         }
@@ -102,6 +114,20 @@ class Vector{
             this.isVertical(dada.data)
         }
         return (this,false);
+    }
+    /**
+     * [isHorizontal description]
+     * 向量的叉积为零，可判定此两个向量平行
+     * @param  {Vector|Array<number>} data [description]
+     * @return {boolean}                   [description]
+     */
+    isHorizontal(data:Vector):boolean{
+        let product = this.mod(this.data)*this.mod(data) * this.angle(data);
+        if(product == 0){
+            return true;
+        }else{
+            return false;
+        }
     }
     /**
      * [angle 向量夹角]

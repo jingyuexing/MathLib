@@ -1,8 +1,8 @@
 /*
 * @Author: Admin
 * @Date:   2021-04-06 22:29:32
-* @Last Modified by:   Admin
-* @Last Modified time: 2021-05-11 05:38:07
+* @Last Modified by:   admin
+* @Last Modified time: 2021-06-05 17:15:58
 */
 
 /**
@@ -53,4 +53,13 @@ void LLinkInsert(LLNode *node,double element){
     LLNode newNode = *(LLinkNewNode(element));
     newNode.next = node->next;
     node->next = &newNode;
+}
+/**
+ * [LLinkConver description]
+ * @param root [description]
+ */
+void LLinkConver(LLNode *root){
+    LLNode *currNode = root;
+    while (currNode != NULL) {
+    }
 }

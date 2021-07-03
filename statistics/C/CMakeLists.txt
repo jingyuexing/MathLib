@@ -3,7 +3,7 @@ project(MathLib)
 
 include(CheckFunctionExists)
 include(CheckIncludeFiles)
-
+include_directories("include")
 # 检查头文件是否存在
 check_include_files(binTree.h HAVE_BINTREE)
 # 检查函数是否存在

@@ -7,6 +7,7 @@
  * @return  double     运算结果
  */
 #include <stdio.h>
+#include <sys/timeb.h>
 double binExp(long double a,int n){
   double k = 1.0;
   while (n){
