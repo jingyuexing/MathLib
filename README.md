@@ -42,68 +42,70 @@ console.log(weigthVariance([2,3,5,8,9,12,44],[1,1,1,2,3,2,1]))
 ```
 
 ### todolist
-- ☐ 完成Matrix算法的 C 实现
-- ☐ 完成Matrix算法的 CPP 实现
-- ☐ 完成Matrix算法的 CS 实现
-- ☐ 完成Matrix算法的 JS 实现
-- ☐ 完成Matrix算法的 GO 实现
-- ☐ 完成Matrix算法的 Haxe 实现
-- ☐ 完成Matrix算法的 Java 实现
-- ☐ 完成Matrix算法的 Python 实现
-- ☐ 完成link链表的 CPP 的实现
-- ☐ 完成link链表的 CS 的实现
-- ☐ 完成link链表的 JS 的实现
-- ☐ 完成link链表的 Go 的实现
-- ☐ 完成link链表的 Haxe 的实现
-- ☐ 完成link链表的 Java 的实现
-- ☐ 完成link链表的 Python 的实现
-- ☐ 完成Vector向量 C 的实现
-- ☐ 完成Vector向量 CPP 的实现
-- ☐ 完成Vector向量 CS 的实现
-- ☐ 完成Vector向量 JS 的实现
-- ☐ 完成Vector向量 Go 的实现
-- ☐ 完成Vector向量 Haxe 的实现
-- ☐ 完成Vector向量 Java 的实现
-- ☐ 完成Vector向量 Python 的实现
-- ☐ 完成Rank排序 C 的算法的实现
-- ☐ 完成Rank排序 CPP 的算法的实现
-- ☐ 完成Rank排序 JS 的算法的实现
-- ☐ 完成Rank排序 Go 的算法的实现
-- ☐ 完成Rank排序 Haxe 的算法的实现
-- ☐ 完成Rank排序 Java 的算法的实现
-- ☐ 完成Sgmoid算法的 C 实现
-- ☐ 完成Sgmoid算法的 CPP 实现
-- ☐ 完成Sgmoid算法的 CS 实现
-- ☐ 完成Sgmoid算法的 JS 实现
-- ☐ 完成Sgmoid算法的 TS 实现
-- ☐ 完成Sgmoid算法的 Go 实现
-- ☐ 完成Sgmoid算法的 Haxe 实现
-- ☐ 完成Sgmoid算法的 Java 实现
-- ☐ 完成Softmax算法的 C 实现
-- ☐ 完成Softmax算法的 CPP 实现
-- ☐ 完成Softmax算法的 CS 实现
-- ☐ 完成Softmax算法的 JS 实现
-- ☐ 完成Softmax算法的 GO 实现
-- ☐ 完成Softmax算法的 Haxe 实现
-- ☐ 完成Softmax算法的 Java 实现
-- ☐ 完成Softmax算法的 Python 实现
-- ☐ 完成Rank排序各类语言算法的实现
-- ☐ 完成Sgmoid算法的各类语言实现
-- ☐ 完成Vector各类语言的实现
-- ☐ 完成link链表的各类语言的实现
-- ☐ 完成Matrix算法的各类语言实现
+ ☐ 完成Matrix算法的 C 实现
+ ☐ 完成Matrix算法的 CPP 实现
+ ☐ 完成Matrix算法的 CS 实现
+ ☐ 完成Matrix算法的 JS 实现
+ ☐ 完成Matrix算法的 GO 实现
+ ☐ 完成Matrix算法的 Haxe 实现
+ ☐ 完成Matrix算法的 Java 实现
+ ☐ 完成Matrix算法的 Python 实现
+ ☐ 完成link链表的 CPP 的实现
+ ☐ 完成link链表的 JS 的实现
+ ☐ 完成link链表的 Haxe 的实现
+ ☐ 完成link链表的 Java 的实现
+ ☐ 完成link链表的 Python 的实现
+ ☐ 完成Vector向量 C 的实现
+ ☐ 完成Vector向量 CPP 的实现
+ ☐ 完成Vector向量 CS 的实现
+ ☐ 完成Vector向量 JS 的实现
+ ☐ 完成Vector向量 Go 的实现
+ ☐ 完成Vector向量 Haxe 的实现
+ ☐ 完成Vector向量 Java 的实现
+ ☐ 完成Rank排序 C 的算法的实现
+ ☐ 完成Rank排序 CPP 的算法的实现
+ ☐ 完成Rank排序 JS 的算法的实现
+ ☐ 完成Rank排序 Go 的算法的实现
+ ☐ 完成Rank排序 Haxe 的算法的实现
+ ☐ 完成Rank排序 Java 的算法的实现
+ ☐ 完成Sgmoid算法的 C 实现
+ ☐ 完成Sgmoid算法的 CPP 实现
+ ☐ 完成Sgmoid算法的 JS 实现
+ ☐ 完成Sgmoid算法的 TS 实现
+ ☐ 完成Sgmoid算法的 Go 实现
+ ☐ 完成Sgmoid算法的 Haxe 实现
+ ☐ 完成Sgmoid算法的 Java 实现
+ ☐ 完成Softmax算法的 C 实现
+ ☐ 完成Softmax算法的 CPP 实现
+ ☐ 完成Softmax算法的 JS 实现
+ ☐ 完成Softmax算法的 GO 实现
+ ☐ 完成Softmax算法的 Haxe 实现
+ ☐ 完成Softmax算法的 Java 实现
+ ☐ 完成Rank排序各类语言算法的实现
+ ☐ 完成Sgmoid算法的各类语言实现
+ ☐ 完成Vector各类语言的实现
+ ☐ 完成link链表的各类语言的实现
+ ☐ 完成Matrix算法的各类语言实现
+
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
-
 Archive:
-- ✔ 完成link链表的 C 的实现 @done (20-12-08 20:38)
-- ✔ 完成Softmax算法的 TS 实现 @done (20-12-03 14:28)
-- ✔ 完成link链表的 TS 的实现 @done (20-12-03 14:27)
-- ✔ 完成Vector向量 TS 的实现 @done (20-12-03 14:27)
-- ✔ 完成Rank排序 TS 的算法的实现 @done (20-12-03 14:27)
-- ✔ 完成Rank排序 Python 的算法的实现 @done (20-12-03 14:27)
-- ✔ 完成Matrix算法的 TS 实现 @done (20-12-03 14:27)
-- ✔ 完成Sgmoid算法的 Python 实现 @done (20-12-03 14:26)
+ ✔ 完成List链表的 Go 的实现 @done (21-08-07 11:31)
+ ✔ 完成link链表的 Go 的实现 @done (21-08-07 11:29)
+ ✔ 完成link链表的 C 的实现 @done (20-12-08 20:38)
+ ✔ 完成Sgmoid算法的 CS 实现 @done (20-12-04 12:12)
+ ✔ 完成link链表的 CS 的实现 @done (20-12-04 12:03)
+ ✔ 完成Softmax算法的 CS 实现 @done (20-12-04 11:17)
+ ✔ 完成Sgmoid算法的 CS 实现 @done (20-12-04 11:16)
+ ✔ 完成Vector向量 Python 的实现 @done (20-12-03 14:41)
+ ✔ 完成Softmax算法的 Python 实现 @done (20-12-03 14:41)
+ ✔ 完成Softmax算法的 TS 实现 @done (20-12-03 14:28)
+ ✔ 完成link链表的 TS 的实现 @done (20-12-03 14:27)
+ ✔ 完成Vector向量 TS 的实现 @done (20-12-03 14:27)
+ ✔ 完成Rank排序 TS 的算法的实现 @done (20-12-03 14:27)
+ ✔ 完成Rank排序 Python 的算法的实现 @done (20-12-03 14:27)
+ ✔ 完成Matrix算法的 TS 实现 @done (20-12-03 14:27)
+ ✔ 完成Sgmoid算法的 Python 实现 @done (20-12-03 14:26)
 
 ---
 关于这个数学库如果有意见可以和我[一起修改我的github仓库](https://github.com/jingyuexing/MathLib)
