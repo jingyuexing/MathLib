@@ -4,7 +4,7 @@
 typedef struct Node{
     struct Node *next;
     int index;
-    double element;
+    void *element;
 }ListNode;
 struct list{
     struct list *self;
