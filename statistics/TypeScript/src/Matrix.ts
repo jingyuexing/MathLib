@@ -21,18 +21,12 @@ class Matrix{
      * @param {number} row [行数]
      * @param {number} col [列数]
      */
-    constructor(row:number =0,col:number =0,data=[]){
-
-        if(data.length != 0 && data[0] instanceof Array){
-            this.col = data.length;
-            this.row = data[0].length;
-        }else{
-            this.row=row;//行
-            this.col=col;//列
-            this.data = Array(this.row);
-            for(let i=0;i<this.row;i++){
-                this.data[i] = new Array(this.col)
-            }
+    constructor(row:number,col:number,data=[]){
+        this.row=row;//行
+        this.col=col;//列
+        this.data = Array(this.row);
+        for(let i=0;i<this.row;i++){
+            this.data[i] = new Array(this.col)
         }
     }
     /**
@@ -67,7 +61,7 @@ class Matrix{
                     }
                 }
             }
-            return tempMatrix;
+            return (this,tempMatrix);
         }
     }
 
@@ -77,7 +71,7 @@ class Matrix{
      * @param data 矩阵或者向量
      * @returns 矩阵或者是向量
      */
-    Hardamard(data:Matrix|Vector):Matrix{
+    Hardamard(data:Matrix|Vector):Matrix|Vector{
         if(data instanceof Matrix){
             let tempMatrix = new Matrix(data.row,data.col);
             for(let i=0;i<data.col;i++){
@@ -85,10 +79,10 @@ class Matrix{
                     tempMatrix[i][j] = this.data[i][j]*data.data[i][j];
                 }
             }
-            return (this,tempMatrix);
+            return tempMatrix;
         }
         if(data instanceof Vector){
-            let tempV = new Array(data.data.length);
+            let tempV = new Vector(new Array(data.data.length));
             if(data.data.length==this.data.length){
                 for(let i=0;i<data.data.length;i++){
                     for(let j=0;j< this.row;j++){
@@ -104,12 +98,12 @@ class Matrix{
      * @param  {Matrix} matrix [迹运算对象]
      * @return {number}        [返回总和]
      */
-    Tr():number{
+    Tr(matrix:Matrix):number{
         let total:number=0;
-        for(let i=0;i<this.col;i++){
-            for(let j=0;j<this.row;j++){
+        for(let i=0;i<matrix.col;i++){
+            for(let j=0;j<matrix.row;j++){
                 if(i==j){
-                    total+=this.data[i][j];
+                    total+=matrix.data[i][j];
                 }
             }
         }
@@ -135,11 +129,11 @@ class Matrix{
      * 求矩阵范数
      * @param {Matrix} A [description]
      */
-    frobenius(){
+    frobenius(A:Matrix){
         let tempNums:number=0;
-        for(let i=0;i<this.row;i++){
-            for(let j=0;j<this.col;j++){
-                tempNums+= this.data[i][j]**2
+        for(let i=0;i<A.row;i++){
+            for(let j=0;j<A.col;j++){
+                tempNums+= A.data[i][j]**2
             }
         }
         return (this,tempNums**(1/2));
@@ -150,16 +144,14 @@ class Matrix{
      * @param  {Matrix} A [需被转置的矩阵]
      * @return {Matrix}   [转置后的结果]
      */
-    tran():Matrix{
-        for(let i=0;i<this.row;i++){
-            for(let j=0;j<this.col;j++){
-                let temp:number = 0;
-                temp = this.data[j][i];
-                this.data[j][i] = this.data[i][j];
-                this.data[i][j] = temp;
+    tran(A:Matrix):Matrix{
+        let NMatrix = new Matrix(A.col,A.row);
+        for(let i=0;i<A.row;i++){
+            for(let j=0;j<A.col;j++){
+                NMatrix.data[j][i]=A.data[i][j];
             }
         }
-        return this;
+        return NMatrix;
     }
     /**
      * @param {void} 无输入
