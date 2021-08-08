@@ -89,12 +89,3 @@ void LLinkInsert(Link *self,double item,double element){
     newNode.next = findOne.next->next;
     findOne.next = &newNode;
 }
-/**
- * [LLinkConver description]
- * @param root [description]
- */
-void LLinkConver(LLNode *root){
-    LLNode *currNode = root;
-    while (currNode != NULL) {
-    }
-}
