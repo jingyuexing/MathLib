@@ -2,7 +2,7 @@
 * @Author: Jingyuexing
 * @Date:   2021-08-07 10:50:14
 * @Last Modified by:   Jingyuexing
-* @Last Modified time: 2021-08-07 11:28:43
+* @Last Modified time: 2021-08-08 16:52:11
 */
 
 package List;
@@ -53,5 +53,7 @@ func (l *List)find(item interface{})Node{
     for currNode.element != item && currNode != nil {
         currNode = currNode.next
     }
+
     return *currNode
+
 }
