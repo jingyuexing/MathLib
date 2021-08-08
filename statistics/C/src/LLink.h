@@ -10,7 +10,7 @@ typedef struct Link{
     LLNode *pos;
     struct Link *(*New)();
     struct LLNode *(*LLinkNewNode)(double element);
-    void (*LLinkRemove)(Link *self,double item);
+    void (*LLinkRemove)(struct Link *self,double item);
     void (*LLinkInsert)(LLNode *node,double item,double element);
     struct LLNode *(*LLinkSearch)(struct Link *self,double item);
 }Link;
