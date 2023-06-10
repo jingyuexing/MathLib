@@ -10,7 +10,6 @@ package mathlib
  * 定义矩阵接口
  */
 type Matrix interface {
-
 }
 
 /**

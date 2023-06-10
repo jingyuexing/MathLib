@@ -1,8 +1,8 @@
 /*
 * @Author: Admin
 * @Date:   2021-05-06 14:27:53
-* @Last Modified by:   Jingyuexing
-* @Last Modified time: 2021-08-07 11:05:42
+* @Last Modified by:   admin
+* @Last Modified time: 2022-04-14 20:48:40
  */
 package mathlib
 
@@ -29,9 +29,13 @@ func (l *Link) init() {
 	l.head = nil
 	l.pos = nil
 	l.length = 0
-
 }
 
+/**
+ * [func description]
+ * @param  {interface{}} item
+ * @return {[type]}   [description]
+ */
 func (l *Link) append(item interface{}) {
 	var newNode = new(Node)
 	l.pos = l.head.next
