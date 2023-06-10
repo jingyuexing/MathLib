@@ -33,9 +33,7 @@ type Vector struct {
 
 func shorterLength(a []int64, b []int64) int {
 	length := len(a)
-	if len(b) > len(a) {
-		length = len(a)
-	} else {
+	if len(b) < len(a) {
 		length = len(b)
 	}
 	return length
