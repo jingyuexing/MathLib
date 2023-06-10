@@ -15,8 +15,8 @@ import (
  * 定义矩阵接口
  */
 type vector interface {
-	mult(data Vector) []int64
-	add(data Vector) []int64
+	mult(data Vector) *Vector
+	add(data Vector) *Vector
 	mod() float64
 	dot(data Vector) float64
 	isVertical(data Vector) bool
