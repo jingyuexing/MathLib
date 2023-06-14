@@ -23,3 +23,32 @@ func (s Set) Remove(items ...string){
 func (s Set) Length() int{
 	return len(s)
 }
+
+func (s Set) IsEmpty() bool {
+	return s.Length() == 0
+}
+
+func (s Set) Union(other ...Set) Set {
+	union := make(Set)
+	for k, v := range s {
+		union[k] = v
+	}
+	for _, otherSet := range other {
+		for k, v := range otherSet {
+			union[k] = v
+		}
+	}
+	return union
+}
+
+func (s Set) Intersection(others ...Set) Set {
+	intersection := make(Set)
+	for k := range s {
+		for _, otherSet := range others {
+			if otherSet.Contains(k) {
+				intersection[k] = true
+			}
+		}
+	}
+	return intersection
+}
